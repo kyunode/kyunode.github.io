@@ -1,0 +1,17 @@
+:root {
+  --pr: #180e0f;
+  --pr2: #482c2f;
+  --pro: #ffffff;
+  --pr-isi: #c9bcb0;
+  --pro-isi: #0c0708;
+  --lb: #e3e3e3;
+  --lb2: #f1f1f1;
+  --lbo: #35a854;
+  --garis: #aaa798;
+  --sk: #d25601; /* Ai */
+  --tr: #236e37;
+    /* Parameter di bawah diambil dari https://codepen.io/sosuke/pen/Pjoqqp */
+  --tr-svg: invert(34%) sepia(12%) saturate(2261%) hue-rotate(83deg) brightness(98%) contrast(94%);
+  --galat: var(--setsuna20);
+  --galat-isi: var(--setsuna90);
+}

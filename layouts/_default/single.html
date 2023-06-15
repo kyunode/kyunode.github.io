@@ -1,0 +1,31 @@
+{{ partial "default_head.html" . }}
+
+<div class="post">
+  {{ if ne .Lastmod .Date }}
+    <span class="post-date">Terakhir diperbarui pada {{ dateFormat .Site.Params.DateForm .Lastmod }}</span>
+  {{ end }}
+  <h1 class="post-title">{{ .Title | markdownify }}</h1>
+  {{ if .Params.image }}
+    <div style="position:relative;">    
+      <img id="cover" src="{{ .Params.image }}"></img>
+      {{ if .Params.imgcap }}
+        <div id="caption">{{ .Params.imgcap | markdownify }}</div>
+      {{ end }}
+    </div>
+  {{ else }}
+    <hr/>
+  {{ end }}
+  {{ .Content }}
+</div>
+
+{{ if eq .Params.author "Qauland" }}
+  <img id="sitelogo" src="/images/qauland-plain.png" style="float:left;" alt="Logo Qauland"></img>
+{{ end }}
+
+<span class="post-date" style="margin-top:-.2rem;font-size:75%;font-weight:500;line-height:1.15;">
+  {{ dateFormat "0201" .Date }}
+  <br>
+  {{ index site.Data.roman (dateFormat "2006" .Date) }}
+</span>
+
+{{ partial "default_foot.html" . }}

@@ -1,0 +1,45 @@
+/* Radio Canada */
+
+@font-face {
+  font-family: "Radio Canada";
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/RadioCanada/RadioCanada-2.104.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Radio Canada";
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/RadioCanada/RadioCanada-Italic-2.104.woff2') format('woff2');
+}
+
+/* Cascadia Code */
+
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/CascadiaCode/CascadiaCode-Italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/CascadiaCode/CascadiaCode-BoldItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/CascadiaCode/CascadiaCode-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Cascadia Code";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/CascadiaCode/CascadiaCode-Bold.woff2') format('woff2');
+}

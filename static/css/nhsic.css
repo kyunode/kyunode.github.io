@@ -1,0 +1,115 @@
+/* Skema warna beberapa anggota Klub Idol SMA Nijigasaki */
+/* Dibuat oleh https://m3.material.io/theme-builder      */
+/* Kode warna diambil dari https://idol.st               */
+
+:root {
+
+  --ayumu       : #f0939e; /* merah muda */
+  --kasumi      : #f7f064; /* kuning */
+  --shizuku     : #81c6ef; /* biru muda */
+  --karin       : #034099; /* biru tua */
+  --ai          : #eb6001; /* jingga */
+  --kanata      : #ba8ec1; /* ungu muda, lavender? */
+  --setsuna     : #da363f; /* merah */
+  --emma        : #6cbd61; /* hijau muda */
+  --rina        : #a8aaa9; /* abu-abu */
+  --shioriko    : #2c9e7e; /* hijau teal kayaknya */
+  --mia         : #aaa798; /* abu-abu juga */
+  --lanzhu      : #efc3c0; /* merah muda pudar */
+
+  --ayumu0  : #000000;
+  --ayumu10 : #400011;
+  --ayumu20 : #5f1223;
+  --ayumu25 : #6e1d2e;
+  --ayumu30 : #7d2938;
+  --ayumu35 : #8c3443;
+  --ayumu40 : #9b404f;
+  --ayumu50 : #ba5867;
+  --ayumu60 : #d9717f;
+  --ayumu70 : #f98a99;
+  --ayumu80 : #ffb2ba;
+  --ayumu90 : #ffd9dc;
+  --ayumu95 : #ffeced;
+  --ayumu98 : #fff8f7;
+  --ayumu99 : #fffbff;
+  --ayumu100: #ffffff;
+
+  --kasumi0  : #000000;
+  --kasumi10 : #1e1c00;
+  --kasumi20 : #343200;
+  --kasumi25 : #403d00;
+  --kasumi30 : #4c4900;
+  --kasumi35 : #585500;
+  --kasumi40 : #656100;
+  --kasumi50 : #7f7a00;
+  --kasumi60 : #9a9400;
+  --kasumi70 : #b5af28;
+  --kasumi80 : #d1cb43;
+  --kasumi90 : #eee75c;
+  --kasumi95 : #fdf669;
+  --kasumi98 : #fffad9;
+  --kasumi99 : #fffbff;
+  --kasumi100: #ffffff;
+
+  --setsuna0  : #000000;
+  --setsuna10 : #410006;
+  --setsuna20 : #68000f;
+  --setsuna25 : #7d0014;
+  --setsuna30 : #93001a;
+  --setsuna35 : #a70821;
+  --setsuna40 : #b91b2b;
+  --setsuna50 : #dc3840;
+  --setsuna60 : #ff5358;
+  --setsuna70 : #ff8986;
+  --setsuna80 : #ffb3b0;
+  --setsuna90 : #ffdad8;
+  --setsuna95 : #ffedeb;
+  --setsuna98 : #fff8f7;
+  --setsuna99 : #fffbff;
+  --setsuna100: #ffffff;
+
+  --emma0  : #000000;
+  --emma5  : #001100;
+  --emma10 : #002200;
+  --emma20 : #003a01;
+  --emma25 : #034604;
+  --emma30 : #145210;
+  --emma35 : #225e1b;
+  --emma40 : #2f6b26;
+  --emma50 : #47853d;
+  --emma60 : #619f54;
+  --emma70 : #7abb6c;
+  --emma80 : #95d785;
+  --emmat80: #c4e4bf;
+  --emma90 : #b0f49e;
+  --emmat90: #e1f1df;
+  --emma95 : #caffb9;
+  --emmat95: #f0f8ef;
+  --emma98 : #ecffe2;
+  --emma99 : #f7ffee;
+  --emma100: #ffffff;
+
+  --rinat7 : #212221;
+  --rinat10: #272827;
+
+  --mia0  : #000000;
+  --mia10 : #1e1c00;
+  --mia20 : #343200;
+  --mia25 : #3f3d00;
+  --mia30 : #4b4900;
+  --mia35 : #585500;
+  --mia40 : #646100;
+  --mia50 : #7e7a00;
+  --mia60 : #999421;
+  --mia70 : #b4af3b;
+  --mia80 : #d0cb54;
+  --miat80: #dddbd5;
+  --mia90 : #ede76d;
+  --miat90: #eeedea;
+  --mia95 : #fcf579;
+  --miat95: #f6f6f4;
+  --mia98 : #fffbd8;
+  --mia99 : #fffbff;
+  --mia100: #ffffff;
+
+}

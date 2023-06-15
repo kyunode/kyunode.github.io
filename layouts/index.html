@@ -1,0 +1,40 @@
+{{ partial "default_head.html" . }}
+
+<!-- Space delimited list of page types -->
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+
+<div class="posts">
+  {{ range .Paginator.Pages }}
+    <div class="post">
+        <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
+        {{ if .Description }}
+            {{ .Description | markdownify }}
+        {{ else }}
+            {{ .Plain | truncate 275 }}
+        {{ end }}
+        <span class="post-date">
+        Ditulis pada {{ dateFormat .Site.Params.DateForm .Date }}
+        {{ if ne .Params.author "Qauland" }}
+            oleh {{ .Params.author }}
+        {{ end }}
+        {{ if ne .Lastmod .Date }}
+            <br>Terakhir diperbarui pada {{ dateFormat .Site.Params.DateForm .Lastmod }}
+        {{ end }}
+        <br>Waktu baca &#177;{{ div .WordCount 185 | math.Ceil }} menit
+        </span>
+    </div>
+  {{ end }}
+</div>
+
+<hr>
+<div style="text-align:center;margin-top:.5rem;margin-bottom:1.25rem;">
+  {{ if $paginator.HasPrev }}
+  <a class="pagination-item newer" href="{{ $paginator.Prev.URL }}">&#9664;</a>
+  {{ end }}
+  &#8194;Halaman {{ $paginator.PageNumber }} dari {{ $paginator.TotalPages }}&#8194;
+  {{ if $paginator.HasNext }}
+  <a class="pagination-item older" href="{{ $paginator.Next.URL }}">&#9654;</a>
+  {{ end }}
+</div>
+
+{{ partial "default_foot.html" . }}
