@@ -50,7 +50,7 @@ a:hover {
 }
 
 code, kbd, pre, samp {
-    font-family: "JetBrains Mono", monospace;
+    font-family: "JetBrains Mono", monospace; /* Sekarang Cascadia Code */
     font-size: 1em;
 }
 ```
