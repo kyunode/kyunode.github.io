@@ -1,64 +1,6 @@
-/* Radio Canada */
-
-@font-face {
-  font-family: "Radio Canada";
-  font-style: normal;
-  font-display: swap;
-  src: url('/fonts/RadioCanada/RadioCanada-2.104.woff2') format('woff2');
-}
-@font-face {
-  font-family: "Radio Canada";
-  font-style: italic;
-  font-display: swap;
-  src: url('/fonts/RadioCanada/RadioCanada-Italic-2.104.woff2') format('woff2');
-}
-
-/* Schibsted Grotesk */
-
-@font-face {
-  font-family: "Schibsted Grotesk";
-  font-style: normal;
-  font-display: swap;
-  src: url('/fonts/SchibstedGrotesk/SchibstedGrotesk.woff2') format('woff2');
-}
-@font-face {
-  font-family: "Schibsted Grotesk";
-  font-style: italic;
-  font-display: swap;
-  src: url('/fonts/SchibstedGrotesk/SchibstedGrotesk-Italic.woff2') format('woff2');
-}
-
-/* Public Sans */
-
-@font-face {
-  font-family: "Public Sans";
-  font-style: normal;
-  font-display: swap;
-  src: url('/fonts/PublicSans/PublicSans.ttf') format('truetype');
-}
-@font-face {
-  font-family: "Public Sans";
-  font-style: italic;
-  font-display: swap;
-  src: url('/fonts/PublicSans/PublicSans-Italic.ttf') format('truetype');
-}
-
-/* Finlandica */
-
-@font-face {
-  font-family: "Finlandica";
-  font-style: normal;
-  font-display: swap;
-  src: url('/fonts/Finlandica/Finlandica.ttf') format('truetype');
-}
-@font-face {
-  font-family: "Finlandica";
-  font-style: italic;
-  font-display: swap;
-  src: url('/fonts/Finlandica/Finlandica-Italic.ttf') format('truetype');
-}
-
 /* Cascadia Code */
+/* Fon Windows Terminal dan Visual Studio */
+/* Lisensi SIL OFL v1.1 */
 
 @font-face {
   font-family: "Cascadia Code";
@@ -87,4 +29,21 @@
   font-weight: 700;
   font-display: swap;
   src: url('/fonts/CascadiaCode/CascadiaCode-Bold.woff2') format('woff2');
+}
+
+/* Finlandica */
+/* Fon resmi Finlandia */
+/* Lisensi SIL OFL v1.1 */
+
+@font-face {
+  font-family: "Finlandica";
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Finlandica/Finlandica.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Finlandica";
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/Finlandica/Finlandica-Italic.ttf') format('truetype');
 }
