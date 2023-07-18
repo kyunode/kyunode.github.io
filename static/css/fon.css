@@ -1,6 +1,4 @@
 /* Cascadia Code */
-/* Fon Windows Terminal dan Visual Studio */
-/* Lisensi SIL OFL v1.1 */
 
 @font-face {
   font-family: "Cascadia Code";
@@ -31,19 +29,33 @@
   src: url('/fonts/CascadiaCode/CascadiaCode-Bold.woff2') format('woff2');
 }
 
-/* Finlandica */
-/* Fon resmi Finlandia */
-/* Lisensi SIL OFL v1.1 */
+/* Arvo */
 
 @font-face {
-  font-family: "Finlandica";
+  font-family: "Arvo";
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/Finlandica/Finlandica.ttf') format('truetype');
+  src: url('/fonts/Arvo/Arvo-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Finlandica";
+  font-family: "Arvo";
+  font-weight: 400;
   font-style: italic;
   font-display: swap;
-  src: url('/fonts/Finlandica/Finlandica-Italic.ttf') format('truetype');
+  src: url('/fonts/Arvo/Arvo-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Arvo";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Arvo/Arvo-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Arvo";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/Arvo/Arvo-BoldItalic.ttf') format('truetype');
 }

@@ -15,15 +15,15 @@ body {
 }
 
 html {
-  font-family : "Finlandica", Helvetica, Arial, sans-serif;
+  font-family : Arvo, Cambria, "New York", "Times New Roman", serif;
   font-weight : 450;
-  font-size   : 20px;
+  font-size   : 13pt;
   line-height : 1.5;
 }
 
 @media (max-width: 480px) {
   html {
-    font-size    : 18px;
+    font-size    : 11pt;
   }
 }
 
@@ -86,22 +86,22 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family   : "Finlandica", Helvetica, Arial, sans-serif;
-  color         : var(--pro-isi);
+  font-family   : Arvo, Cambria, "New York", "Times New Roman", serif;
+  /* color         : var(--pro-isi); */
   margin-bottom : .5rem;
   line-height   : 1.25;
   text-rendering: optimizeLegibility;
 }
 
 h1 {
-  font-weight   : 450;
+  font-weight   : 400;
   font-stretch  : 85%;
-  font-size     : 2rem;
+  font-size     : 1.75rem;
   letter-spacing: -0.05rem;
 }
 
 h2, h3, h4, h5, h6 {
-  font-weight   : 500;
+  font-weight   : 700;
 }
 
 h2 {
@@ -116,7 +116,7 @@ h3 {
 
 h4, h5, h6 {
   margin-top    : 1rem;
-  font-size     : 1rem;
+  font-size     : 1.1rem;
 }
 
 /* ======== */
@@ -236,8 +236,7 @@ pre code {
 /* TANGGAL DAN PEMILIK POS */
 
 .post-date {
-  /* font-family  : "Cascadia Code", monospace; */
-  font-stretch : 100%;
+  /* font-family  : "Radio-Canada", sans-serif; */
   font-size    : 80%;
   display      : block;
   margin-top   : .75rem;
@@ -257,9 +256,9 @@ pre code {
   filter        : var(--tr-svg);
   vertical-align: text-top;
   display       : inline;
-  width         : 18px;
-  height        : 18px;
-  margin        : 0px 3px 0px 0px;
+  width         : 1.05rem;
+  height        : 1.05rem;
+  margin        : 0px 3px 0px 3px;
 }
 
 /* ================ */
@@ -352,7 +351,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .container {
-  max-width         : 28rem;
+  max-width         : 32rem;
   padding-left      : 1rem;
   padding-right     : 1rem;
   margin-left       : auto;
@@ -361,13 +360,13 @@ tbody tr:nth-child(odd) th {
 
 @media (min-width: 38em) {
   .container {
-    max-width: 36rem;
+    max-width: 37rem;
   }
 }
 
 @media (min-width: 56em) {
   .container {
-    max-width: 52rem;
+    max-width: 54rem;
   }
 }
 
