@@ -15,7 +15,7 @@ body {
 }
 
 html {
-  font-family : Arvo, Cambria, "New York", "Times New Roman", serif;
+  font-family : B612, Cambria, "New York", "Times New Roman", serif;
   font-weight : 450;
   font-size   : 13pt;
   line-height : 1.5;
@@ -86,7 +86,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family   : Arvo, Cambria, "New York", "Times New Roman", serif;
+  font-family   : B612, Cambria, "New York", "Times New Roman", serif;
   /* color         : var(--pro-isi); */
   margin-bottom : .5rem;
   line-height   : 1.25;

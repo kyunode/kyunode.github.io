@@ -29,6 +29,123 @@
   src: url('/fonts/CascadiaCode/CascadiaCode-Bold.woff2') format('woff2');
 }
 
+/* Overpass */
+
+@font-face {
+  font-family: "Overpass";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Overpass/Overpass-Italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Overpass";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Overpass/Overpass-BoldItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Overpass/Overpass-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Overpass/Overpass-Bold.woff2') format('woff2');
+}
+
+/* Vollkorn */
+
+@font-face {
+  font-family: "Vollkorn";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Vollkorn/Vollkorn-Italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Vollkorn";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Vollkorn/Vollkorn-BoldItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Vollkorn";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Vollkorn/Vollkorn-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Vollkorn";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Vollkorn/Vollkorn-Bold.woff2') format('woff2');
+}
+
+/* Infini */
+
+@font-face {
+  font-family: "Infini";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Infini/infini-italic.woff') format('woff');
+}
+@font-face {
+  font-family: "Infini";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Infini/infini-regular.woff') format('woff');
+}
+@font-face {
+  font-family: "Infini";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Infini/infini-bold.woff') format('woff');
+}
+
+/* Share */
+
+@font-face {
+  font-family: "Share";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Share/Share-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Share";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/Share/Share-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Share";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Share/Share-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Share";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/Share/Share-BoldItalic.ttf') format('truetype');
+}
+
 /* Arvo */
 
 @font-face {
@@ -58,4 +175,114 @@
   font-style: italic;
   font-display: swap;
   src: url('/fonts/Arvo/Arvo-BoldItalic.ttf') format('truetype');
+}
+
+/* B612 */
+
+@font-face {
+  font-family: "B612";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/B612/B612-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "B612";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/B612/B612-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: "B612";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/B612/B612-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "B612";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/B612/B612-BoldItalic.ttf') format('truetype');
+}
+
+/* Averia Sans */
+
+@font-face {
+  font-family: "Averia Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/AveriaSans/AveriaSansGWF-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Averia Sans";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/AveriaSans/AveriaSansGWF-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Averia Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/AveriaSans/AveriaSansGWF-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Averia Sans";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/AveriaSans/AveriaSansGWF-BoldItalic.ttf') format('truetype');
+}
+
+/* Averia Serif */
+
+@font-face {
+  font-family: "Averia Serif";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/AveriaSerif/AveriaSerifGWF-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Averia Serif";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/AveriaSerif/AveriaSerifGWF-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Averia Serif";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/AveriaSerif/AveriaSerifGWF-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Averia Serif";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/AveriaSerif/AveriaSerifGWF-BoldItalic.ttf') format('truetype');
+}
+
+/* Mplus */
+
+@font-face {
+  font-family: "Mplus";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Mplus/MplusCodeLatin50-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: "Mplus";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Mplus/MplusCodeLatin50-Bold.otf') format('opentype');
 }
