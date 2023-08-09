@@ -42,3 +42,33 @@
   font-display: swap;
   src: url('/fonts/OakSans/OakSans-ItalicVF.woff2') format('woff2');
 }
+
+/* NeverMind Semi Serif */
+@font-face {
+  font-family: "NeverMind";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/NeverMind/NeverMindCompact-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "NeverMind";
+  font-style: normal;
+  font-weight:700;
+  font-display: swap;
+  src: url('/fonts/NeverMind/NeverMindCompact-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "NeverMind";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/NeverMind/NeverMindCompact-RegularItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: "NeverMind";
+  font-style: italic;
+  font-weight:700;
+  font-display: swap;
+  src: url('/fonts/NeverMind/NeverMindCompact-BoldItalic.ttf') format('truetype');
+}
