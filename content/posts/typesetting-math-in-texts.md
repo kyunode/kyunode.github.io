@@ -2,15 +2,37 @@
 title: "Typesetting Math"
 author: Texts.io
 description: "Sebuah tutorial (dalam bahasa Inggris) untuk menulis rumus matematika di web."
-date: 2015-11-21
+date   : 2015-11-21
+lastmod: 2023-08-11
 ---
 
 > Pos ini rusak total semenjak situs ini pindah dari Jekyll ke Hugo. Kalau ada niat dan waktu luang, mungkin saya akan perbaiki.
 
 <!-- MathJax -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!--<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+    });
+</script>-->
 
-<i>Untuk menulis rumus matematika, tambahkan baris berikut di awal pos (setelah</i> front matter<i>):</i>
+<i>Untuk menulis rumus matematika, tambahkan baris berikut di awal pos (setelah </i>front matter<i>):</i>
 
 ```html
 <!-- MathJax -->
@@ -21,28 +43,26 @@ date: 2015-11-21
 
 ---
 
-Basic math
-----------
+## Basic math
 
 Whenever you typeset mathematical notation, it needs to have “Math” style. For
-example: If $$a$$ is an integer, then $$2a+1$$ is odd.
+example: If $a$ is an integer, then $2a+1$ is odd.
 
 Superscripts and subscripts are created using the characters `^` and `_`,
-respectively: $$x^2+y^2=1$$ and $$a_n=0$$. It is fine to have both on a single
-letter: $$x_0^2$$.
+respectively: $x^2+y^2=1$ and $a_n=0$. It is fine to have both on a single
+letter: $x_0^2$.
 
 If the superscript [or subscript] is more than a single character, enclose the
-superscript in curly braces: $$e^{-x}$$.
+superscript in curly braces: $e^{-x}$.
 
-Greek letters are typed using commands such as `\gamma` ($$\gamma)$$ and
-`\Gamma` ($$\Gamma$$).
+Greek letters are typed using commands such as `\gamma` ($\gamma)$ and
+`\Gamma` ($\Gamma$).
 
 Named mathematics operators are usually typeset in roman. Most of the standards
-are already available. Some examples: $$\det A$$, $$\cos\pi$$, and
-$$\log(1-x)$$.
+are already available. Some examples: $\det A$, $\cos\pi$, and
+$\log(1-x)$.
 
-Displayed equations
--------------------
+## Displayed equations
 
 When an equation becomes too large to run in-line, you display it in a “Math”
 paragraph by itself.
@@ -57,15 +77,15 @@ equations.
 $$
 \begin{aligned}
   (x-y)^2
-  &= (x-y)(x-y) \\
-  &= x^2 -yx - xy + y^2 \\
+  &= (x-y)(x-y) \\\\\\
+  &= x^2 -yx - xy + y^2 \\\\\\
   &= x^2 -2xy +y^2.
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-  3x-y&=0 & 2a+b &= 4 \\
+  3x-y&=0 & 2a+b &= 4 \\\\\\
   x+y &=1 & a-3b &=10
 \end{aligned}
 $$
@@ -76,7 +96,7 @@ $$
 f(x) = \frac{x}{x-1} \text{ for $x\not=1$}.
 $$
 
-This is the $$3^{\text{rd}}$$ time I’ve asked for my money back.
+This is the $3^{\text{rd}}$ time I’ve asked for my money back.
 
 The `\begin{cases}...\end{cases}` environment is perfect for defining functions
 piecewise:
@@ -84,54 +104,51 @@ piecewise:
 $$
 |x| =
 \begin{cases}
-x & \text{when $x \ge 0$ and} \\
+x & \text{when $x \ge 0$ and} \\\\\\
 -x & \text{otherwise.}
 \end{cases}
 $$
 
-Relations and operations
-------------------------
+## Relations and operations
 
--   Equality-like: $$x=2$$, $$x \not= 3$$, $$x \cong y$$, $$x \propto y$$,
-    $$y\sim z$$, $$N \approx M$$, $$y \asymp z$$, $$P \equiv Q$$.
+-   Equality-like: $x=2$, $x \not= 3$, $x \cong y$, $x \propto y$,
+    $y\sim z$, $N \approx M$, $y \asymp z$, $P \equiv Q$.
 
--   Order: $$x < y$$, $$y \le z$$, $$z \ge 0$$, $$x \preceq y$$, $$y\succ z$$,
-    $$A \subseteq B$$, $$B \supset Z$$.
+-   Order: $x < y$, $y \le z$, $z \ge 0$, $x \preceq y$, $y\succ z$,
+    $A \subseteq B$, $B \supset Z$.
 
--   Arrows: $$x \to y$$, $$y\gets x$$, $$A \Rightarrow B$$, $$A \iff B$$, $$x
-    \mapsto f(x)$$, $$A \Longleftarrow B$$.
+-   Arrows: $x \to y$, $y\gets x$, $A \Rightarrow B$, $A \iff B$, $x
+    \mapsto f(x)$, $A \Longleftarrow B$.
 
--   Set stuff: $$x \in A$$, $$b \notin C$$, $$A \ni x$$. Use `\notin` rather
-    than `\not\in`. $$A \cup B$$, $$X \cap Y$$, $$A \setminus B = \emptyset$$.
+-   Set stuff: $x \in A$, $b \notin C$, $A \ni x$. Use `\notin` rather
+    than `\not\in`. $A \cup B$, $X \cap Y$, $A \setminus B = \emptyset$.
 
--   Arithmetic: $$3+4$$, $$5-6$$, $$7\cdot 8 = 7\times8$$,
-    $$3\div6=\frac{1}{2}$$, $$f\circ g$$, $$A \oplus B$$, $$v \otimes w$$.
+-   Arithmetic: $3+4$, $5-6$, $7\cdot 8 = 7\times8$,
+    $3\div6=\frac{1}{2}$, $f\circ g$, $A \oplus B$, $v \otimes w$.
 
--   Mod: As a binary operation, use `\bmod`: $$x \bmod N$$. As a relation use
+-   Mod: As a binary operation, use `\bmod`: $x \bmod N$. As a relation use
     `\mod`, `\pmod`, or `\pod`:
 
     $$
     \begin{aligned}
-      x &\cong y \mod 10 \\
-      x &\cong y \pmod{10} \\
+      x &\cong y \mod 10 \\\\\\
+      x &\cong y \pmod{10} \\\\\\
       x &\cong y \pod{10}
     \end{aligned}
     $$
 
--   Calculus: $$\partial F/\partial x$$, $$\nabla g$$.
+-   Calculus: $\partial F/\partial x$, $\nabla g$.
 
-Use the right dots
-------------------
+## Use the right dots
 
 Do not type three periods; instead use `\cdots` between operations and `\ldots`
-in lists: $$x_1 + x_2 + \cdots + x_n$$ and $$(x_1,x_2,\ldots,x_n)$$.
+in lists: $x_1 + x_2 + \cdots + x_n$ and $(x_1,x_2,\ldots,x_n)$.
 
-Built up structures
--------------------
+## Built up structures
 
--   Fractions: $$\frac{1}{2}$$, $$\frac{x-1}{x-2}$$.
+-   Fractions: $\frac{1}{2}$, $\frac{x-1}{x-2}$.
 
--   Binomial coefficients: $$\binom{n}{2}$$.
+-   Binomial coefficients: $\binom{n}{2}$.
 
 -   Sums and products. Do *not* use `\Sigma` and `\Pi`.
 
@@ -148,10 +165,10 @@ Built up structures
 -   Integrals:
 
     $$
-    \int_0^1 x^2 \, dx
+    \int_0^1 x^2 \ dx
     $$
 
-    The extra bit of space before the $$dx$$ term is created with the `\,`
+    The extra bit of space before the $dx$ term is created with the `\ `
     command.
 
 -   Limits:
@@ -160,14 +177,14 @@ Built up structures
     \lim_{h\to0} \frac{\sin(x+h) - \sin(x)}{h} = \cos x .
     $$
 
-    Also $$\limsup_{n\to\infty} a_n$$.
+    Also $\limsup_{n\to\infty} a_n$.
 
--   Radicals: $$\sqrt{3}$$, $$\sqrt[3]{12}$$, $$\sqrt{1+\sqrt{2}}$$.
+-   Radicals: $\sqrt{3}$, $\sqrt[3]{12}$, $\sqrt{1+\sqrt{2}}$.
 
 -   Matrices:
 
     $$
-    A = \left[\begin{matrix} 3 & 4 & 0 \\ 2 & -1 & \pi \end{matrix}\right] .
+    A = \left[\begin{matrix} 3 & 4 & 0 \\\\\\ 2 & -1 & \pi \end{matrix}\right] .
     $$
 
     A big matrix:
@@ -175,25 +192,24 @@ Built up structures
     $$
     D = \left[ 
         \begin{matrix}
-          \lambda_1 & 0 & 0 & \cdots & 0 \\
-          0 & \lambda_2 & 0 & \cdots & 0 \\
-          0 & 0 & \lambda_3 & \cdots & 0 \\
-          \vdots & \vdots & \vdots & \ddots & \vdots \\
+          \lambda_1 & 0 & 0 & \cdots & 0 \\\\\\
+          0 & \lambda_2 & 0 & \cdots & 0 \\\\\\
+          0 & 0 & \lambda_3 & \cdots & 0 \\\\\\
+          \vdots & \vdots & \vdots & \ddots & \vdots \\\\\\
           0 & 0 & 0 & \cdots & \lambda_n
         \end{matrix}
         \right].
     $$
 
-Delimiters
-----------
+## Delimiters
 
--   Parentheses and square brackets are easy: $$(x-y)(x+y)$$, $$[3-x]$$.
+-   Parentheses and square brackets are easy: $(x-y)(x+y)$, $[3-x]$.
 
--   For curly braces use `\{` and `\}`: $$\{x : 3x-1 \in A\}$$.
+-   For curly braces use `\{` and `\}`: $\{x : 3x-1 \in A\}$.
 
--   Absolute value: $$\vert x-y\vert$$, $$\vert\vec{x} - \vec{y}\vert$$.
+-   Absolute value: $\vert x-y\vert$, $\vert\vec{x} - \vec{y}\vert$.
 
--   Floor and ceiling: $$\lfloor \pi \rfloor = \lceil e \rceil$$.
+-   Floor and ceiling: $\lfloor \pi \rfloor = \lceil e \rceil$.
 
 -   To make delimiters grow so they are properly sized to contain their
     arguments, use `\left` and `\right`:
