@@ -15,9 +15,9 @@ body {
 }
 
 html {
-  font-family : "Inter", sans-serif;
-  font-feature-settings: "cv08";
-  font-weight : 450;
+  font-family : "Inclusive Sans", sans-serif;
+  font-feature-settings: "ss01";
+  font-weight : 400;
   font-size   : 14pt;
   line-height : 1.5;
 }
@@ -87,7 +87,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family   : "Inter", sans-serif;
+  font-family   : "Inclusive Sans", sans-serif;
   /* color         : var(--pro-isi); */
   margin-bottom : .5rem;
   line-height   : 1.25;
@@ -95,9 +95,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-weight   : 450;
+  font-weight   : 400;
   font-stretch  : 85%;
-  font-size     : 1.75rem;
+  font-size     : 1.65rem;
   letter-spacing: -0.05rem;
 }
 
@@ -179,7 +179,7 @@ blockquote p:last-child {
 
 a {
   color          : var(--tr);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a strong {
@@ -202,8 +202,8 @@ pre {
 
 code {
   padding         : .25em .5em;
-  font-size       : 85%;
-  color           : var(--sk);
+  font-size       : 95%;
+  color           : #ffd9dc;
   border-radius   : 3px;
 }
 
@@ -238,7 +238,7 @@ pre code {
 
 .post-date {
   /* font-family  : "Radio-Canada", sans-serif; */
-  font-size    : 80%;
+  font-size    : 11pt;
   display      : block;
   margin-top   : .75rem;
   color        : var(--pr2);
@@ -248,18 +248,26 @@ pre code {
 /* PENUTUP SITUS ATAU PENAFIAN */
 
 .disclaimer {
-  font-size     : .87rem;
+  font-size     : 11pt;
   color         : var(--pr2);
   margin-bottom : 30px;
+}
+
+.disclaimer a {
+  text-decoration: none;
+}
+
+.disclaimer a:hover {
+  text-decoration: underline;
 }
 
 .disc-icon {
   filter        : var(--tr-svg);
   vertical-align: text-top;
   display       : inline;
-  width         : 1.05rem;
-  height        : 1.05rem;
-  margin        : 0px 3px 0px 3px;
+  width         : 13pt;
+  height        : 13pt;
+  margin        : 0px 1px 0px 5px;
 }
 
 /* ================ */
@@ -380,6 +388,11 @@ tbody tr:nth-child(odd) th {
 .post-title,
 .post-title a {
   color: var(--pro-isi);
+  text-decoration: none;
+}
+
+.post-title a:hover {
+  text-decoration: underline;
 }
 
 .page-title,
