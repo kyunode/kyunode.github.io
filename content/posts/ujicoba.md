@@ -1,12 +1,12 @@
 ---
-title: "Ujicoba"
+title: "⚠️ Ujicoba"
 author: Qauland
-description: "Peringatan: Beberapa bagian dari pos ini membutuhkan kuki, serta mungkin berat untuk dimuat dan/atau tidak bekerja sebagaimana mestinya."
+description: "PERINGATAN: Beberapa bagian dari pos ini membutuhkan kuki, serta mungkin berat untuk dimuat dan/atau tidak bekerja sebagaimana mestinya."
 date   : 2020-03-22
-lastmod: 2023-05-15
+lastmod: 2023-08-11
 ---
 
-> Peringatan: Anda memasuki pos ujicoba. Beberapa bagian dari pos ini membutuhkan kuki, serta mungkin berat untuk dimuat dan/atau tidak bekerja sebagaimana mestinya.
+> PERINGATAN: Anda memasuki pos ujicoba. Beberapa bagian dari pos ini membutuhkan kuki, serta mungkin berat untuk dimuat dan/atau tidak bekerja sebagaimana mestinya.
 
 ## Kode sebaris
 
@@ -125,7 +125,7 @@ Satu pos yang memiliki dua atau lebih gambar *kemungkinan* harus menggunakan leb
 	
     var timeFormat = 'YYMMDDHHmmss';
     
-	Chart.defaults.global.defaultFontFamily = 'Radio Canada';
+	Chart.defaults.global.defaultFontFamily = 'Bitter';
 	
     var config = {
         type:    'line',
@@ -212,4 +212,4 @@ Satu pos yang memiliki dua atau lebih gambar *kemungkinan* harus menggunakan leb
 
 ## Embedded Google Sheets chart
 
-<iframe width="100%" height="470" style="overflow-x: auto;" seamless frameborder="0" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR9kIQtLrsjwC9ppMmK5mDaUDQrD9UnEBtba50o5775l-KqvLZ1bmwcFOb1HWyvzA/pubchart?oid=2107131299&amp;format=interactive"></iframe>
+<iframe width="100%" height="470" style="overflow-x:auto;font-family:'Bitter';" seamless frameborder="0" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR9kIQtLrsjwC9ppMmK5mDaUDQrD9UnEBtba50o5775l-KqvLZ1bmwcFOb1HWyvzA/pubchart?oid=2107131299&amp;format=interactive"></iframe>

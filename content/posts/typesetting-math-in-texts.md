@@ -9,15 +9,21 @@ lastmod: 2023-08-11
 > Pos ini rusak total semenjak situs ini pindah dari Jekyll ke Hugo. Kalau ada niat dan waktu luang, mungkin saya akan perbaiki.
 
 <!-- MathJax -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-});
-</script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
 <!--<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+<!--<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/latest.js?config=TeX-AMS-MML_HTMLorMML">
+</script>-->
+<script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
           // customised options
@@ -30,7 +36,7 @@ MathJax.Hub.Config({
           throwOnError : false
         });
     });
-</script>-->
+</script>
 
 <i>Untuk menulis rumus matematika, tambahkan baris berikut di awal pos (setelah </i>front matter<i>):</i>
 
@@ -168,8 +174,7 @@ in lists: $x_1 + x_2 + \cdots + x_n$ and $(x_1,x_2,\ldots,x_n)$.
     \int_0^1 x^2 \ dx
     $$
 
-    The extra bit of space before the $dx$ term is created with the `\ `
-    command.
+    The extra bit of space before the $dx$ term is created with the `\ ` command.
 
 -   Limits:
 
@@ -215,7 +220,7 @@ in lists: $x_1 + x_2 + \cdots + x_n$ and $(x_1,x_2,\ldots,x_n)$.
     arguments, use `\left` and `\right`:
 
     $$
-    \left[ \sum_{n=0}^\infty a_n x^n \right]^2 =
+    \left([ \sum_{n=0}^\infty a_n x^n \right)]^2 =
     \exp \left\{ - \frac{x^2}{2} \right\}
     $$
 

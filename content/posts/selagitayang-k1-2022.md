@@ -1,7 +1,7 @@
 ---
 title: "Kumpulan SelagiTayang Sebelum Tahun 2023"
 author: Qauland
-description: "Kumpulan tulisan untuk berbagai seri animasi Jepang yang pernah saya tonton sebelum tahun 2023. Perhatian: Pos ini sangat panjang dan mengandung banyak gambar dengan ukuran berkas yang besar."
+description: "Kumpulan tulisan untuk berbagai seri animasi Jepang yang pernah saya tonton sebelum tahun 2023. PERINGATAN: Pos ini sangat panjang dan mengandung banyak gambar dengan ukuran berkas yang besar."
 date   : 2022-01-29
 lastmod: 2023-02-22
 ---

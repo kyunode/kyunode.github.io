@@ -2,8 +2,9 @@
 title:  "Terima kasih, Priconne. Saya pensi."
 author: Qauland
 image: https://i.postimg.cc/6pjw4XSY/20220106-1.jpg
-description: "Peringatan: Pos ini mengandung spoiler."
-date: 2022-01-07
+description: "Saya pensi duluan sebelum Priconne global tutup peladen."
+date   : 2022-01-07
+lastmod: 2023-08-11
 ---
 
 Berikut adalah "pencapaian" saya selama setahun bermain.
@@ -75,3 +76,7 @@ Berikut adalah "pencapaian" saya selama setahun bermain.
 ---
 
 *Signing off*.
+
+Sunting 11/8/23:
+
+<a href="https://imgflip.com/i/7vfcid"><img src="https://i.imgflip.com/7vfcid.jpg" title="Dibuat di imgflip.com" alt="Gambar meme Crab Rave. Teks di atas: 'Peladen Global'. Teks di bawah: 'is Gone'."/></a>

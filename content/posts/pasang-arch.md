@@ -4,7 +4,7 @@ author: Qauland
 image: https://i.postimg.cc/dQTgk0BL/Screenshot-2023-02-26-21-53-12.jpg
 description: "Dokumentasi pribadi mengenai proses pemasangan Arch Linux."
 date   : 2023-02-10
-lastmod: 2023-05-28
+lastmod: 2023-08-11
 ---
 
 Jika Anda berniat untuk memasang Arch Linux, **jangan ikuti langkah-langkah di bawah**. Pos ini ditulis untuk tujuan dokumentasi pribadi saja. **Pos ini bisa saja mengandung saltik (*typo*) di *command*-nya yang dapat menghapus data-data penting atau merusak sistem komputer Anda jika dijalankan.** Lebih baik ikuti petunjuk resmi di [ArchWiki](<https://wiki.archlinux.org/title/Installation_guide>), atau petunjuk ahli di [ItsFOSS](<https://itsfoss.com/install-arch-linux/>).
@@ -43,12 +43,12 @@ Selesaikan pakai Ctrl+C.
 Gunakan peladen paket aplikasi dengan jaringan tercepat:
 
 ```
-reflector --country 'Australia,Indonesia,' --sort rate --save /etc/pacman.d/mirrorlist
+reflector --country 'Australia,Singapore,' --sort rate --save /etc/pacman.d/mirrorlist
 ```
 
 Tambahkan `--download-timeout 60` kalau sering *time out*. 
 
-> Jika ingin menambahkan negara Indonesia, silakan ganti bagian `--country` jadi `'Australia,Indonesia,'`, namun mohon perhatikan bahwa ada *bug* langka di mana ada beberapa paket dari peladen Indonesia yang tidak dapat terpasang karena *invalid key*.
+> Jika ingin menambahkan negara Indonesia, silakan ganti bagian `--country` jadi `'Australia,Singapore,Indonesia,'`, namun mohon perhatikan bahwa ada *bug* langka di mana ada beberapa paket dari peladen Indonesia yang tidak dapat terpasang karena *invalid key*.
 
 Cek tanggal:
 
@@ -234,7 +234,7 @@ umount -R /mnt
 reboot
 ```
 
-## Selamat datang di Arch Linux!
+## Selamat datang di Arch Linux! 🎉
 
 ### Konfigurasi setelah pemasangan
 
