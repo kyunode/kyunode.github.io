@@ -29,16 +29,16 @@
   src: url('/fonts/CascadiaCode/CascadiaCode-Bold.woff2') format('woff2');
 }
 
-/* Inclusive Sans */
+/* Bitter */
 @font-face {
-  font-family: "Inclusive Sans";
+  font-family: "Bitter";
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/InclusiveSans/InclusiveSans-Regular.woff2') format('woff2');
+  src: url('/fonts/Bitter/Bitter.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Inclusive Sans";
+  font-family: "Bitter";
   font-style: italic;
   font-display: swap;
-  src: url('/fonts/InclusiveSans/InclusiveSans-Italic.woff2') format('woff2');
+  src: url('/fonts/Bitter/Bitter-Italic.ttf') format('truetype');
 }

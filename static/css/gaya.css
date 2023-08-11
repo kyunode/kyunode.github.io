@@ -4,8 +4,14 @@
 /* ---------------------------------------------------- */
 
 
-/* =================== */
-/* HTML & BADAN (BODY) */
+/* ==================== */
+/* ROOT, HTML, DAN BODY */
+
+:root {
+  font-family : "Bitter", serif;
+  /* font-feature-settings: "ss01"; */
+  font-weight : 400;
+}
 
 html,
 body {
@@ -15,9 +21,6 @@ body {
 }
 
 html {
-  font-family : "Inclusive Sans", sans-serif;
-  font-feature-settings: "ss01";
-  font-weight : 400;
   font-size   : 14pt;
   line-height : 1.5;
 }
@@ -87,7 +90,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family   : "Inclusive Sans", sans-serif;
+  font-family   : "Bitter", serif;
   /* color         : var(--pro-isi); */
   margin-bottom : .5rem;
   line-height   : 1.25;
@@ -95,14 +98,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-weight   : 400;
+  font-weight   : 850;
   font-stretch  : 85%;
   font-size     : 1.65rem;
   letter-spacing: -0.05rem;
 }
 
 h2, h3, h4, h5, h6 {
-  font-weight   : 700;
+  font-weight   : 850;
 }
 
 h2 {
@@ -157,7 +160,7 @@ dd {
 /* KUTIPAN (QUOTE) */
 
 blockquote {
-  padding        : .5rem 1rem;
+  padding        : .5rem .1rem;
   margin         : .8rem 0;
   color          : var(--sk);
   border-left    : .2rem solid var(--sk);
@@ -169,7 +172,7 @@ blockquote p:last-child {
 
 @media (min-width: 30em) {
   blockquote {
-    padding-right: 5rem;
+    padding-right: 1rem;
     padding-left : 1.25rem;
   }
 }
@@ -201,8 +204,8 @@ pre {
 }
 
 code {
-  padding         : .25em .5em;
-  font-size       : 95%;
+  padding         : .2rem .2rem;
+  font-size       : .9rem;
   color           : #ffd9dc;
   border-radius   : 3px;
 }
@@ -216,6 +219,7 @@ pre {
   line-height     : 1.4;
   white-space     : pre;
   overflow-x      : auto;
+  border-radius   : 3px;
 }
 
 pre code {
@@ -225,10 +229,10 @@ pre code {
   background-color: transparent;
 }
 
-/* ======= */
-/* MATHJAX */
+/* ================= */
+/* MATHJAX DAN KATEX */
 
-.MathJax_Display, .MJXc-display, .MathJax_SVG_Display {
+.MathJax_Display, .MJXc-display, .MathJax_SVG_Display, .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -238,17 +242,25 @@ pre code {
 
 .post-date {
   /* font-family  : "Radio-Canada", sans-serif; */
-  font-size    : 11pt;
+  font-size    : .8rem;
+  font-weight  : 600;
   display      : block;
   margin-top   : .75rem;
   color        : var(--pr2);
+}
+
+.post-date.bottom {
+  margin-top : -.32rem;
+  font-size  : .8rem;
+  font-weight: 800;
+  line-height: 1.15;
 }
 
 /* =========================== */
 /* PENUTUP SITUS ATAU PENAFIAN */
 
 .disclaimer {
-  font-size     : 11pt;
+  font-size     : .8rem;
   color         : var(--pr2);
   margin-bottom : 30px;
 }
@@ -265,8 +277,8 @@ pre code {
   filter        : var(--tr-svg);
   vertical-align: text-top;
   display       : inline;
-  width         : 13pt;
-  height        : 13pt;
+  width         : .9rem;
+  height        : .9rem;
   margin        : 0px 1px 0px 5px;
 }
 
