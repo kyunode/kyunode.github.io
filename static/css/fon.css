@@ -28,17 +28,3 @@
   font-display: swap;
   src: url('/fonts/CascadiaCode/CascadiaCode-Bold.woff2') format('woff2');
 }
-
-/* Bitter */
-@font-face {
-  font-family: "Bitter";
-  font-style: normal;
-  font-display: swap;
-  src: url('/fonts/Bitter/Bitter.ttf') format('truetype');
-}
-@font-face {
-  font-family: "Bitter";
-  font-style: italic;
-  font-display: swap;
-  src: url('/fonts/Bitter/Bitter-Italic.ttf') format('truetype');
-}
