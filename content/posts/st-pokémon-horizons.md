@@ -1,5 +1,5 @@
 ---
-title: "SelagiTayang: Pokémon Horizons (+ XY, Diamond Pearl, dan Platinum)"
+title: "SelagiTayang: Pokémon Horizons (+!)"
 
 author: Qauland
 image: https://qauland.s-ul.eu/stt/x9StlrcF.png

@@ -125,7 +125,7 @@ Satu pos yang memiliki dua atau lebih gambar *kemungkinan* harus menggunakan leb
 	
     var timeFormat = 'YYMMDDHHmmss';
     
-	Chart.defaults.global.defaultFontFamily = 'Bitter';
+	Chart.defaults.global.defaultFontFamily = 'Sentient';
 	
     var config = {
         type:    'line',
