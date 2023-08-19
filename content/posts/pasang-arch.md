@@ -4,7 +4,7 @@ author: Qauland
 image: https://i.postimg.cc/dQTgk0BL/Screenshot-2023-02-26-21-53-12.jpg
 description: "Dokumentasi pribadi mengenai proses pemasangan Arch Linux."
 date   : 2023-02-10
-lastmod: 2023-08-11
+lastmod: 2023-08-20
 ---
 
 Jika Anda berniat untuk memasang Arch Linux, **jangan ikuti langkah-langkah di bawah**. Pos ini ditulis untuk tujuan dokumentasi pribadi saja. **Pos ini bisa saja mengandung saltik (*typo*) di *command*-nya yang dapat menghapus data-data penting atau merusak sistem komputer Anda jika dijalankan.** Lebih baik ikuti petunjuk resmi di [ArchWiki](<https://wiki.archlinux.org/title/Installation_guide>), atau petunjuk ahli di [ItsFOSS](<https://itsfoss.com/install-arch-linux/>).
@@ -140,7 +140,7 @@ Pasang `sudo` dan buat akun pengguna (diasumsikan `qauland`):
 
 ```
 pacman -Syu sudo
-useradd -m qauland
+useradd -c "Qauland" -m qauland
 passwd qauland # Ketik kata sandi untuk pengguna qauland
 usermod -aG wheel,audio,video,storage qauland
 EDITOR=nano visudo
