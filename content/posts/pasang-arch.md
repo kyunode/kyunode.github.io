@@ -207,7 +207,7 @@ Ganti elipsis dengan kumpulan paket di bawah sesuka Anda:
 
 - `noto-fonts-emoji`
 
-  Fon Noto yang mendukung emoji.
+  ✨👀👌💯🌟
 
 Setelah memasang LightDM, buka `lightdm.conf`:
 
@@ -236,7 +236,7 @@ umount -R /mnt
 reboot
 ```
 
-Selamat datang di Arch Linux! 🎉
+**Selamat datang di Arch Linux!**
 
 ---
 
