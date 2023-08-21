@@ -8,8 +8,8 @@
 /* ROOT, HTML, DAN BODY */
 
 :root {
-  font-family : "Sentient", serif;
-  font-feature-settings: "ss01";
+  font-family : "Oak Sans", sans-serif;
+  font-feature-settings: "ss02";
   font-weight : 400;
 }
 html,
@@ -89,7 +89,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family   : "Sentient", serif;
+  font-family   : "Oak Sans", sans-serif;
   /* color         : var(--pro-isi); */
   margin-bottom : .5rem;
   line-height   : 1.25;
@@ -250,16 +250,16 @@ pre code {
 .post-date {
   /* font-family  : "Radio-Canada", sans-serif; */
   font-size    : .8rem;
-  font-weight  : 600;
+  font-weight  : 500;
   display      : block;
   margin-top   : .75rem;
   color        : var(--pr2);
 }
 
 .post-date.bottom {
-  margin-top : -.32rem;
+  margin-top : -.3rem;
   font-size  : .8rem;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.15;
 }
 

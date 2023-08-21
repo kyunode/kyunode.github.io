@@ -28,3 +28,18 @@
   font-display: swap;
   src: url('/fonts/CascadiaCode/CascadiaCode-Bold.woff2') format('woff2');
 }
+
+/* Oak Sans */
+
+@font-face {
+  font-family: "Oak Sans";
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/OakSans/OakSansVF.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Oak Sans";
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/OakSans/OakSans-ItalicVF.woff2') format('woff2');
+}
