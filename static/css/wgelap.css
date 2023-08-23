@@ -1,12 +1,12 @@
 :root {
-  --pr: #fffce7; /* #f9d6da; #e0f2e5; Isi */
+  --pr: #e1dec9; /* #f9d6da; #e0f2e5; Isi */
   --pr2: #35a854; /* Mint-Y */
   --pro: #090909;
   --pr-isi: #262320; /* Kasumi */
   --pro-isi: #5dcc7b; /* #fce9eb; Judul */
-  --lb: #0e0e0e;
-  --lb2: #030303;
-  --lbo: #35a854;
+  --lb: #000;
+  --lb2: #222;
+  --lbo: #1a542a;
   --garis: #0f3219;
   --sk: #f0939e; /* Kasumi */
   --tr: #81c6ef;

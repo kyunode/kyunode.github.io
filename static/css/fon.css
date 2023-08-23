@@ -43,3 +43,20 @@
   font-display: swap;
   src: url('/fonts/OakSans/OakSans-ItalicVF.woff2') format('woff2');
 }
+
+/* Signika Negative */
+
+@font-face {
+  font-family: "Signika Negative";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/SignikaNeg/SignikaNegative-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: "Signika Negative";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/SignikaNeg/SignikaNegative-Bold.woff2') format('woff2');
+}

@@ -8,7 +8,7 @@
 /* ROOT, HTML, DAN BODY */
 
 :root {
-  font-family : "Oak Sans", sans-serif;
+  font-family : "Signika Negative", sans-serif;
   font-feature-settings: "ss02";
   font-weight : 400;
 }
@@ -24,9 +24,9 @@ html {
   line-height : 1.5;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   html {
-    font-size    : 11pt;
+    font-size    : 11.5pt;
   }
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family   : "Oak Sans", sans-serif;
+  font-family   : "Signika Negative", sans-serif;
   /* color         : var(--pro-isi); */
   margin-bottom : .5rem;
   line-height   : 1.25;
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-weight   : 500;
+  font-weight   : 700;
   font-stretch  : 85%;
   font-size     : 1.75rem;
   letter-spacing: -0.02rem;
@@ -207,14 +207,14 @@ code,
 pre {
   font-family     : "Cascadia Code", Consolas, monospace;
   font-feature-settings: "ss01" 0;
-  background-color: var(--lb2);
 }
 
 code {
-  padding         : .2rem .2rem;
-  font-size       : .9rem;
+  padding         : .12rem .12rem;
+  font-size       : .85rem;
   color           : #ffd9dc;
   border-radius   : 3px;
+  background-color: var(--lb2);
 }
 
 pre {
@@ -222,10 +222,11 @@ pre {
   margin-top      : 0;
   margin-bottom   : 1rem;
   padding         : 1rem;
-  font-size       : .8rem;
+  font-size       : .85rem;
   line-height     : 1.4;
   white-space     : pre;
   overflow-x      : auto;
+  border          : 1.5px dashed var(--pr);
   border-radius   : 3px;
 }
 
@@ -233,6 +234,7 @@ pre code {
   padding         : 0;
   font-size       : 100%;
   color           : inherit;
+  border          : none;
   background-color: transparent;
 }
 
@@ -240,6 +242,7 @@ pre code {
 /* MATHJAX DAN KATEX */
 
 .MathJax_Display, .MJXc-display, .MathJax_SVG_Display, .katex-display {
+  padding   : .4em .3em .3em .3em;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -250,14 +253,14 @@ pre code {
 .post-date {
   /* font-family  : "Radio-Canada", sans-serif; */
   font-size    : .8rem;
-  font-weight  : 500;
+  font-weight  : 400;
   display      : block;
   margin-top   : .75rem;
   color        : var(--pr2);
 }
 
 .post-date.bottom {
-  margin-top : -.3rem;
+  margin-top : -.35rem;
   font-size  : .8rem;
   font-weight: 700;
   line-height: 1.15;
