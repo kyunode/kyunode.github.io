@@ -4,7 +4,7 @@ author: Qauland
 image: https://i.postimg.cc/dQTgk0BL/Screenshot-2023-02-26-21-53-12.jpg
 description: "Dokumentasi pribadi mengenai proses pemasangan Arch Linux."
 date   : 2023-02-10
-lastmod: 2023-08-21
+lastmod: 2023-08-27
 ---
 
 Jika Anda berniat untuk memasang Arch Linux, **jangan ikuti langkah-langkah di bawah**. Pos ini ditulis untuk tujuan dokumentasi pribadi saja. **Pos ini bisa saja mengandung saltik (*typo*) di *command*-nya yang dapat menghapus data-data penting atau merusak sistem komputer Anda jika dijalankan.** Lebih baik ikuti petunjuk resmi di [ArchWiki](<https://wiki.archlinux.org/title/Installation_guide>), atau petunjuk ahli di [ItsFOSS](<https://itsfoss.com/install-arch-linux/>).
@@ -15,11 +15,17 @@ Penting: **Selalu gunakan `-S` atau `-Syu` saat memasang aplikasi menggunakan `p
 
 ## Memasang Arch Linux
 
-Cek apakah ada partisi EFI:
+Cek mode *boot*:
 
 ```
-ls /sys/firmware/efi/efivars
+cat /sys/firmware/efi/fw_platform_size
 ```
+
+- `64`: UEFI 64-bit x64
+- `32`: UEFI 32-bit IA32
+- tidak ada: BIOS/CSM
+
+Alur pemasangan di bawah mengasumsikan mode BIOS/CSM. Akan ada catatan jika perintah berbeda atau ada tambahan di mode UEFI.
 
 Hubungkan komputer ke internet via Wi-Fi (diasumsikan nama perangkat Wi-Fi adalah `wlan0` dan nama jaringan Wi-Fi adalah `Qauland`):
 
@@ -58,19 +64,27 @@ Cek tanggal:
 timedatectl status
 ```
 
-Cek partisi diska sekaligus membuat partisi sistem dan *swap* (diasumsikan partisi sistem dan *swap* adalah `/dev/sda5` dan `/dev/sda6`):
+Cek partisi diska sekaligus membuat partisi sistem dan *swap* (diasumsikan partisi sistem dan *swap* adalah `/dev/sda3` dan `/dev/sda1`):
 
 ```
 fdisk -l
-mkfs.ext4 /dev/sda5 # sistem
-mkswap /dev/sda6    # swap
+mkfs.ext4 /dev/sda3 # sistem
+mkfs.ext4 /dev/sda4 # partisi /home, opsional
+mkswap /dev/sda1    # swap
 ```
 
 Muat partisi yang sudah dibuat:
 
 ```
-mount /dev/sda5 /mnt
+mount /dev/sda3 /mnt
+mount --mkdir /dev/sda4 /mnt/home # kalau buat partisi /home
 swapon /dev/sda6
+```
+
+**UEFI:** Muat partisi EFI (diasumsikan `/dev/sda2`) ke `/boot/efi`:
+
+```
+mount --mkdir /mnt/boot/efi
 ```
 
 Pasang Arch Linux dan `nano`:
@@ -83,7 +97,7 @@ Buat berkas `fstab`:
 
 ```
 genfstab -U /mnt >> /mnt/etc/fstab
-nano /mnt/etc/fstab # Sunting jika ada galat
+nano /mnt/etc/fstab # sunting jika ada galat
 ```
 
 Masuk ke instalasi Arch Linux:
@@ -102,7 +116,7 @@ hwclock --systohc
 Buat dan ganti berkas terkait *locale*. Saya pakai *locale* `en_GB`:
 
 ```
-nano /etc/locale.gen # Uncomment en_GB.UTF-8 UTF-8 dan/atau locale lain yang dibutuhkan
+nano /etc/locale.gen # uncomment en_GB.UTF-8 UTF-8 dan/atau locale lain yang dibutuhkan
 locale-gen
 echo LANG=en_GB.UTF-8 > /etc/locale.conf
 export LANG=en_GB.UTF-8
@@ -133,17 +147,17 @@ passwd
 Pasang `grub` (diasumsikan dipasang di `/dev/sda`):
 
 ```
-pacman -Syu grub # Tambahkan efibootmgr jika ada partisi efi
+pacman -Syu grub # tambahkan efibootmgr jika ada partisi efi
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-Pasang `sudo` dan buat akun pengguna (diasumsikan `qauland`):
+Pasang `sudo` dan buat akun pengguna (diasumsikan `qauland` dengan nama pengguna `Qauland`):
 
 ```
 pacman -Syu sudo
 useradd -c "Qauland" -m qauland
-passwd qauland # Ketik kata sandi untuk pengguna qauland
+passwd qauland # ketik kata sandi untuk pengguna qauland
 usermod -aG wheel,audio,video,storage qauland
 EDITOR=nano visudo
 ```
@@ -181,11 +195,15 @@ Ganti elipsis dengan kumpulan paket di bawah sesuka Anda:
 
   Pengatur konektivitas jaringan, plus ikon di bilah notifikasi.
 
-- `pulseaudio pavucontrol ffmpeg gst-libav`
+- `pulseaudio pavucontrol` (Alternatif (dan direkomendasikan, sepertinya): `pipewire pipewire-alsa pipewire-pulse wireplumber`)
 
-  Sistem peladen dan manajemen suara, serta *mixer*.
+  Sistem peladen dan manajemen suara, serta *mixer*. Kalau memilih alternatif, saat ditanya oleh `pacman`, pilih `pipewire-jack` (biasanya nomor 2).
 
-- `xdg-user-dirs`
+- `ffmpeg gst-libav`
+
+  *Codec* berkas gambar, suara, dan/atau video.
+
+- `xdg-user-dirs xdg-user-dirs-gtk`
 
   Direktori pengguna (dokumen, gambar, musik, dll.)
 
