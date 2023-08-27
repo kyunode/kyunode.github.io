@@ -233,9 +233,11 @@ Setelah memasang LightDM, buka `lightdm.conf`:
 nano /etc/lightdm/lightdm.conf
 ```
 
-Cari `greeter-session`, lalu *uncomment* dan sunting menjadi seperti ini:
+Cari `greeter-session` di bagian `[Seat:*]`, lalu *uncomment* dan sunting menjadi seperti ini:
 
 ```
+[Seat:*]
+...
 greeter-session=lightdm-gtk-greeter
 ```
 
@@ -299,11 +301,20 @@ reboot
      insmod ntldr
      insmod part_msdos
      insmod search_fs_uuid
-     search --fs-uuid --no-floppy --set=root <uuid-drive-C>
+     search --fs-uuid --no-floppy --set=root <uuid-partisi-C>
      ntldr /bootmgr
   }
   ```
 
+  **UEFI:**
+
+  ```
+  menuentry 'Windows 10' {
+     search --fs-uuid --no-floppy --set=root <uuid-partisi-efi>
+     chainloader (${root})/EFI/Microsoft/Boot/bootmgfw.efi
+  }
+  ```
+  
   Kemudian
 
   ```
