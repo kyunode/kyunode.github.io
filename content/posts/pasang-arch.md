@@ -25,7 +25,7 @@ cat /sys/firmware/efi/fw_platform_size
 - `32`: UEFI 32-bit IA32
 - tidak ada: BIOS/CSM
 
-Alur pemasangan di bawah mengasumsikan mode BIOS/CSM. Akan ada catatan jika perintah berbeda atau ada tambahan di mode UEFI.
+Alur pemasangan di bawah mengasumsikan mode BIOS/CSM. Akan ada ❗catatan jika perintah berbeda atau ada tambahan di mode UEFI.
 
 Hubungkan komputer ke internet via Wi-Fi (diasumsikan nama perangkat Wi-Fi adalah `wlan0` dan nama jaringan Wi-Fi adalah `Qauland`):
 
@@ -81,7 +81,7 @@ mount --mkdir /dev/sda4 /mnt/home # kalau buat partisi /home
 swapon /dev/sda6
 ```
 
-**UEFI:** Muat partisi EFI (diasumsikan `/dev/sda2`) ke `/boot/efi`:
+**❗UEFI:** Muat partisi EFI (diasumsikan `/dev/sda2`) ke `/boot/efi`:
 
 ```
 mount --mkdir /mnt/boot/efi
@@ -147,7 +147,7 @@ passwd
 Pasang `grub` (diasumsikan dipasang di `/dev/sda`):
 
 ```
-pacman -Syu grub # tambahkan efibootmgr jika ada partisi efi
+pacman -Syu grub # ❗UEFI: tambahkan efibootmgr
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
@@ -306,7 +306,7 @@ reboot
   }
   ```
 
-  **UEFI:**
+  **❗UEFI:**
 
   ```
   menuentry 'Windows 10' {
