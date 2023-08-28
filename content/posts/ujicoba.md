@@ -3,7 +3,7 @@ title: "⚠️ Ujicoba"
 author: Qauland
 description: "PERINGATAN: Beberapa bagian dari pos ini membutuhkan kuki, serta mungkin berat untuk dimuat dan/atau tidak bekerja sebagaimana mestinya."
 date   : 2020-03-22
-lastmod: 2023-08-11
+lastmod: 2023-08-28
 ---
 
 > PERINGATAN: Anda memasuki pos ujicoba. Beberapa bagian dari pos ini membutuhkan kuki, serta mungkin berat untuk dimuat dan/atau tidak bekerja sebagaimana mestinya.
@@ -123,9 +123,9 @@ Satu pos yang memiliki dua atau lebih gambar *kemungkinan* harus menggunakan leb
 <canvas id="canvas" width="100%" height="65%"></canvas>
 <script> //Code adapted from https://embed.plnkr.co/JOI1fpgWIS0lvTeLUxUp/
 	
-    var timeFormat = 'YYMMDDHHmmss';
+    var timeFormat = 'YYMMDD';
     
-	Chart.defaults.global.defaultFontFamily = 'Sentient';
+	Chart.defaults.global.defaultFontFamily = 'Signika Negative';
 	
     var config = {
         type:    'line',
@@ -134,13 +134,13 @@ Satu pos yang memiliki dua atau lebih gambar *kemungkinan* harus menggunakan leb
                 {
                     label: "Orange",
                     data: [{
-                        x: "190418103003", y: 130952
+                        x: "230804", y: 41.4
                     }, {
-                        x: "190418104503", y: 141898
+                        x: "230807", y: 31.3
                     }, {
-                        x: "190418120003", y: 197869
+                        x: "230530", y: 38
                     }, {
-                        x: "190418123003", y: 214553
+                        x: "230725", y: 41.7
                     }],
                     fill: false,
                     borderColor: 'orange'
@@ -148,13 +148,13 @@ Satu pos yang memiliki dua atau lebih gambar *kemungkinan* harus menggunakan leb
                 {
                     label: "Skyblue",
                     data:  [{
-                        x: "190418103003", y: 93168
+                        x: "230804", y: 26.9
                     }, {
-                        x: "190418104503", y: 98766
+                        x: "230807", y: 19.2
                     }, {
-                        x: "190418120003", y: 134808
+                        x: "230530", y: 18.9
                     }, {
-                        x: "190418123003", y: 146216
+                        x: "230725", y: 21
                     }],
                     fill:  false,
                     borderColor: 'skyblue'
@@ -171,12 +171,12 @@ Satu pos yang memiliki dua atau lebih gambar *kemungkinan* harus menggunakan leb
                 xAxes: [{
                     type:       "time",
                     time:       {
-                        unit: 'hour',
+                        unit: 'day',
                         displayFormats: {
-                        	hour: 'DD MMM HH:mm'
+                        	hour: 'DD MMM'
                         },
                         format: timeFormat,
-                        tooltipFormat: 'DD MMMM YYYY HH:mm:ss'
+                        tooltipFormat: 'DD MMMM YYYY'
                     },
                     scaleLabel: {
                         display:     true,
