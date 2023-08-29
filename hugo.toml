@@ -1,6 +1,7 @@
 baseURL = 'https://kyunode.github.io/'
 languageCode = 'id-ID'
 defaultContentLanguage = 'id'
+timeZone = 'Asia/Makassar'
 title = "Qauland's Sandbox"
 [params]
   title = "Qauland's Sandbox"
