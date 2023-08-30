@@ -39,7 +39,7 @@ body {
 
 ::selection {
   background              : var(--lbo) !important;
-  color                   : var(--pro) !important;
+  color                   : var(--pr) !important;
 }
 
 /* ================================== */
@@ -367,6 +367,19 @@ th {
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: var(--lb2);
+}
+
+
+/* ============ */
+/* CATATAN KAKI */
+
+.footnotes hr::before {
+  content: "Catatan Kaki";
+  color: var(--pr2);
+}
+
+.footnotes {
+  font-size: .8rem;
 }
 
 /* ================ */
