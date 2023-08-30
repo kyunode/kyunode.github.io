@@ -373,14 +373,15 @@ tbody tr:nth-child(odd) th {
 /* ============ */
 /* CATATAN KAKI */
 
-.footnotes hr::before {
-  content: "Catatan Kaki";
-  color: var(--pr2);
-}
-
 .footnotes {
   font-size: .8rem;
+  color: var(--pro-isi);
 }
+
+/* .footnotes hr::before {
+  content: "Daftar Referensi";
+  color: var(--pr2);
+} */
 
 /* ================ */
 /* TATA LETAK SITUS */
