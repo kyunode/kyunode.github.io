@@ -29,34 +29,34 @@
   src: url('/fonts/CascadiaCode/CascadiaCode-Bold.woff2') format('woff2');
 }
 
-/* Oak Sans */
+/* Merriweather Sans */
 
 @font-face {
-  font-family: "Oak Sans";
+  font-family: "Merriweather Sans";
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/OakSans/OakSansVF.woff2') format('woff2');
+  src: url('/fonts/MerriweatherSans/MerriweatherSans.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Oak Sans";
+  font-family: "Merriweather Sans";
   font-style: italic;
   font-display: swap;
-  src: url('/fonts/OakSans/OakSans-ItalicVF.woff2') format('woff2');
+  src: url('/fonts/MerriweatherSans/MerriweatherSans-Italic.ttf') format('truetype');
 }
 
-/* Signika Negative */
+/* Plus Jakarta Sans */
 
 @font-face {
-  font-family: "Signika Negative";
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   font-display: swap;
-  src: url('/fonts/SignikaNeg/SignikaNegative-Regular.woff2') format('woff2');
+  src: url('/fonts/PlusJakarta/PlusJakartaSans-ExtraBold.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Signika Negative";
-  font-style: normal;
-  font-weight: 700;
+  font-family: "Plus Jakarta Sans";
+  font-style: italic;
+  font-weight: 800;
   font-display: swap;
-  src: url('/fonts/SignikaNeg/SignikaNegative-Bold.woff2') format('woff2');
+  src: url('/fonts/PlusJakarta/PlusJakartaSans-ExtraBoldItalic.ttf') format('truetype');
 }

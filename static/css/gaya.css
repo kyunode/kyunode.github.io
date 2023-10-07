@@ -8,9 +8,9 @@
 /* ROOT, HTML, DAN BODY */
 
 :root {
-  font-family : "Signika Negative", sans-serif;
-  font-feature-settings: "ss02";
-  font-weight : 400;
+  font-family : "Merriweather Sans", sans-serif;
+  /* font-feature-settings: "wdth" 90; */
+  font-weight : 350;
 }
 html,
 body {
@@ -20,7 +20,7 @@ body {
 }
 
 html {
-  font-size   : 14pt;
+  font-size   : 13pt;
   line-height : 1.5;
 }
 
@@ -89,7 +89,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family   : "Signika Negative", sans-serif;
+  font-family   : "Plus Jakarta Sans", sans-serif;
+  font-feature-settings: "ss02";
   /* color         : var(--pro-isi); */
   margin-bottom : .5rem;
   line-height   : 1.25;
@@ -98,9 +99,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight   : 700;
-  font-stretch  : 85%;
-  font-size     : 1.75rem;
-  letter-spacing: -0.02rem;
+  /* font-stretch  : 85%; */
+  font-size     : 1.7rem;
+  /* letter-spacing: -0.02rem; */
 }
 
 h2, h3, h4, h5, h6 {
@@ -114,7 +115,7 @@ h2 {
 
 h3 {
   margin-top    : 1.5rem;
-  font-size     : 1.25rem;
+  font-size     : 1.3rem;
 }
 
 h4, h5, h6 {
@@ -438,6 +439,15 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title {
   margin-top: 0;
+}
+
+/* ================== */
+/* UNTUK POS TERTENTU */
+
+/* s3n-2024 */
+#chartjs-s3n-canvas {
+  background-color: rgba(255, 255, 255, .95);
+  border-radius   : 5px;
 }
 
 /* Dikombinasikan oleh Qauland (@kyunode) */
