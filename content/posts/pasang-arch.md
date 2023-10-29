@@ -4,7 +4,7 @@ author: Qauland
 image: https://i.postimg.cc/dQTgk0BL/Screenshot-2023-02-26-21-53-12.jpg
 description: "Dokumentasi pribadi mengenai proses pemasangan Arch Linux."
 date   : 2023-02-10
-lastmod: 2023-08-27
+lastmod: 2023-10-29
 ---
 
 Jika Anda berniat untuk memasang Arch Linux, **jangan ikuti langkah-langkah di bawah**. Pos ini ditulis untuk tujuan dokumentasi pribadi saja. **Pos ini bisa saja mengandung saltik (*typo*) di *command*-nya yang dapat menghapus data-data penting atau merusak sistem komputer Anda jika dijalankan.** Lebih baik ikuti petunjuk resmi di [ArchWiki](<https://wiki.archlinux.org/title/Installation_guide>), atau petunjuk ahli di [ItsFOSS](<https://itsfoss.com/install-arch-linux/>).
@@ -476,3 +476,13 @@ Skema warna yang digunakan adalah **Gruvbox**, tersedia untuk beberapa piranti l
   Masalah ini sudah ada [sejak tahun 2011](https://bugzilla.xfce.org/show_bug.cgi?id=7845) dan sampai sekarang belum diatasi. Mantap jiwa, XFCE!
 
 - Jika menggunakan Adobe Source Han Sans & Serif sebagai fon CJK, terkadang fon Mincho/Serif muncul di Thunar, tercampur dengan fon Sans. Untuk memperbaikinya, ketik [isi GitHub Gist berikut](https://gist.github.com/kyunode/ebcc8fcc54060cfe29b33266071e27db) di `/etc/fonts/local.conf` (buat baru jika tidak ada). Modifikasi sesuai fon-fon yang terpasang di sistem komputer Anda.
+
+- Jika partisi NTFS tidak mau termuat (*mounted*), kemungkinan ada masalah pada paket `ntfs3`. Untuk mengakalinya,
+
+  1. pasang `ntfs-3g`,
+
+  2. buka/buat `/etc/modprobe.d/blacklist.conf`,
+
+  3. tambahkan baris `blacklist ntfs3`, kemudian
+
+  4. *reboot*.
