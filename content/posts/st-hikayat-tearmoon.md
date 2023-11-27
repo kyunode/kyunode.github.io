@@ -4,7 +4,7 @@ author: Qauland
 image: https://pbs.twimg.com/media/F3oKja9aYAALcyh?format=jpg&name=medium
 description: "Tulisan untuk tiap episode seri animasi Hikayat Kekaisaran Tearmoon (Tearmoon Empire Story) yang mulai tayang di kuartal keempat 2023."
 date   : 2023-10-15
-lastmod: 2023-11-13
+lastmod: 2023-11-27
 ---
 
 > Sumber gambar sampul: [Twitter/@tearmoon_pr](https://twitter.com/tearmoon_pr/status/1691736566908264889)
@@ -38,3 +38,11 @@ Entah saya yang kurang fokus atau bagaimana, tapi kayaknya ndak dijelaskan alasa
 ## 06
 
 Pelayannya Sion (yang saya sudah lupa namanya, *sori*) jadi *man of the match*.
+
+## 07
+
+Ketemu *nemesis*.
+
+## 08
+
+*Princess, it was japes! Princess, it was no japes!*
