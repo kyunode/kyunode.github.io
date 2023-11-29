@@ -44,6 +44,21 @@
   src: url('/fonts/MerriweatherSans/MerriweatherSans-Italic.ttf') format('truetype');
 }
 
+/* Averia Serif */
+
+@font-face {
+  font-family: "Averia Serif";
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/AveriaSerif/AveriaSerifGWF-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Averia Serif";
+  font-style: italic;
+  font-display: swap;
+  src: url('/fonts/AveriaSerif/AveriaSerifGWF-BoldItalic.ttf') format('truetype');
+}
+
 /* Plus Jakarta Sans */
 
 @font-face {

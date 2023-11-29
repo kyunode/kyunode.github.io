@@ -8,9 +8,9 @@
 /* ROOT, HTML, DAN BODY */
 
 :root {
-  font-family : "Merriweather Sans", sans-serif;
-  /* font-feature-settings: "wdth" 90; */
-  font-weight : 350;
+  font-family : sans-serif;
+  /* font-feature-settings: "wdth" 90;
+  font-weight : 350; */
 }
 html,
 body {
@@ -89,10 +89,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family   : "Plus Jakarta Sans", sans-serif;
-  font-feature-settings: "ss02";
-  /* color         : var(--pro-isi); */
-  margin-bottom : .5rem;
+  font-family   : "Averia Serif", serif;
+  /* font-feature-settings: "ss02";
+     color         : var(--pro-isi); */
+  margin-bottom : .3rem;
   line-height   : 1.25;
   text-rendering: optimizeLegibility;
 }
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-weight   : 700;
   /* font-stretch  : 85%; */
-  font-size     : 1.7rem;
+  font-size     : 1.75rem;
   /* letter-spacing: -0.02rem; */
 }
 
