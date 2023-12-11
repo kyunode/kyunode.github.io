@@ -4,7 +4,7 @@ author: Qauland
 image: https://pbs.twimg.com/media/F3oKja9aYAALcyh?format=jpg&name=medium
 description: "Tulisan untuk tiap episode seri animasi Hikayat Kekaisaran Tearmoon (Tearmoon Empire Story) yang mulai tayang di kuartal keempat 2023."
 date   : 2023-10-15
-lastmod: 2023-12-04
+lastmod: 2023-12-11
 ---
 
 > Sumber gambar sampul: [Twitter/@tearmoon_pr](https://twitter.com/tearmoon_pr/status/1691736566908264889)
@@ -54,3 +54,9 @@ Revolusi karena menaikkan pajak. *Write that, Konoha.*
 Tata letaknya karavan kuda itu agak aneh. 'Kan banditnya menyerang dari belakang sehingga Mia dkk. terpojok ke bagian depan, tapi kenapa pas Mia terlempar dari karavan, dia keluar dari belakang juga? Atau mungkin saya yang gagal fokus?
 
 Chloe *sus*.
+
+## 10
+
+![Tangkapan layar Hikayat Kekaisaran Tearmoon. Tertulis di bagian takarir, "Apa dia sengaja diculik agar bisa mendapatkan informasi?"](https://qauland.s-ul.eu/0NY0vYSZ.png)
+
+😂
