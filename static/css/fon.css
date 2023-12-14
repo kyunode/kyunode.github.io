@@ -29,19 +29,19 @@
   src: url('/fonts/CascadiaCode/CascadiaCode-Bold.woff2') format('woff2');
 }
 
-/* Merriweather Sans */
+/* Cabin */
 
 @font-face {
-  font-family: "Merriweather Sans";
+  font-family: "Cabin";
   font-style: normal;
   font-display: swap;
-  src: url('/fonts/MerriweatherSans/MerriweatherSans.ttf') format('truetype');
+  src: url('/fonts/Cabin/Cabin.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Merriweather Sans";
+  font-family: "Cabin";
   font-style: italic;
   font-display: swap;
-  src: url('/fonts/MerriweatherSans/MerriweatherSans-Italic.ttf') format('truetype');
+  src: url('/fonts/Cabin/Cabin-Italic.ttf') format('truetype');
 }
 
 /* Averia Serif */
@@ -57,21 +57,4 @@
   font-style: italic;
   font-display: swap;
   src: url('/fonts/AveriaSerif/AveriaSerifGWF-BoldItalic.ttf') format('truetype');
-}
-
-/* Plus Jakarta Sans */
-
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url('/fonts/PlusJakarta/PlusJakartaSans-ExtraBold.ttf') format('truetype');
-}
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  font-style: italic;
-  font-weight: 800;
-  font-display: swap;
-  src: url('/fonts/PlusJakarta/PlusJakartaSans-ExtraBoldItalic.ttf') format('truetype');
 }

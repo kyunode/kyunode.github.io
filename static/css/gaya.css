@@ -8,7 +8,7 @@
 /* ROOT, HTML, DAN BODY */
 
 :root {
-  font-family : sans-serif;
+  font-family : Cabin, sans-serif;
   /* font-feature-settings: "wdth" 90;
   font-weight : 350; */
 }
@@ -20,13 +20,13 @@ body {
 }
 
 html {
-  font-size   : 13pt;
+  font-size   : 14pt;
   line-height : 1.5;
 }
 
 @media screen and (max-width: 480px) {
   html {
-    font-size    : 10.5pt;
+    font-size    : 11pt;
   }
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family   : "Averia Serif", serif;
+  font-family   : Cabin, sans-serif;
   /* font-feature-settings: "ss02";
      color         : var(--pro-isi); */
   margin-bottom : .3rem;
