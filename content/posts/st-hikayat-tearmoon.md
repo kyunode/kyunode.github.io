@@ -1,10 +1,10 @@
 ---
-title: "SelagiTayang: Hikayat Kekaisaran Tearmoon"
+title: "Hikayat Kekaisaran Tearmoon"
 author: Qauland
 image: https://pbs.twimg.com/media/F3oKja9aYAALcyh?format=jpg&name=medium
 description: "Tulisan untuk tiap episode seri animasi Hikayat Kekaisaran Tearmoon (Tearmoon Empire Story) yang mulai tayang di kuartal keempat 2023."
 date   : 2023-10-15
-lastmod: 2023-12-19
+lastmod: 2023-12-24
 ---
 
 > Sumber gambar sampul: [Twitter/@tearmoon_pr](https://twitter.com/tearmoon_pr/status/1691736566908264889)
@@ -64,3 +64,13 @@ Chloe *sus*.
 ## 11
 
 Oke, mungkin ini jadi episode yang paling saya ndak nyaman nontonnya sejauh ini. Dialognya agak aneh, candaannya kurang masuk (kecuali yang paling terakhir). Yaa, semoga versi komiknya lebih bagus dari ini.
+
+## 12
+
+TERLALU. BANYAK. BICARA. DALAM. HATI. Dah macam sinetron.
+
+Revisi: Ini jadi episode yang paling saya ndak nyaman nontonnya.
+
+---
+
+***Turun gunung setelah episode 9.* ★8,2/10**
