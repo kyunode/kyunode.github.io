@@ -44,6 +44,37 @@
   src: url('/fonts/Cabin/Cabin-Italic.ttf') format('truetype');
 }
 
+/* Roboto Mono */
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/RobotoMono/RobotoMono-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/RobotoMono/RobotoMono-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/RobotoMono/RobotoMono-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/RobotoMono/RobotoMono-BoldItalic.ttf') format('truetype');
+}
+
 /* Averia Serif */
 
 @font-face {

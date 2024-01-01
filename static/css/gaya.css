@@ -8,9 +8,9 @@
 /* ROOT, HTML, DAN BODY */
 
 :root {
-  font-family : Cabin, sans-serif;
-  /* font-feature-settings: "wdth" 90;
-  font-weight : 350; */
+  font-family : Inter, sans-serif;
+  font-feature-settings: "cv05" 1;
+  /* font-weight : 350; */
 }
 html,
 body {
@@ -89,16 +89,16 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family   : Cabin, sans-serif;
-  /* font-feature-settings: "ss02";
-     color         : var(--pro-isi); */
+  font-family   : Inter, sans-serif;
+  font-feature-settings: "cv05" 1, "cv06" 1, "cv08" 1, "cv11" 1;
+  /*   color         : var(--pro-isi); */
   margin-bottom : .3rem;
   line-height   : 1.25;
   text-rendering: optimizeLegibility;
 }
 
 h1 {
-  font-weight   : 700;
+  font-weight   : 800;
   /* font-stretch  : 85%; */
   font-size     : 1.75rem;
   /* letter-spacing: -0.02rem; */
@@ -206,7 +206,7 @@ a:focus {
 
 code,
 pre {
-  font-family     : "Cascadia Code", Consolas, monospace;
+  font-family     : "Roboto Mono", Consolas, monospace;
   font-feature-settings: "ss01" 0;
 }
 
@@ -261,6 +261,7 @@ pre code {
 }
 
 .post-date.bottom {
+  font-feature-settings: "cv08" 1;
   margin-top : -.35rem;
   font-size  : .8rem;
   font-weight: 700;
