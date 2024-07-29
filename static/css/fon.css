@@ -1,47 +1,63 @@
-/* Cascadia Code */
+/* IBM Plex Sans */
 
 @font-face {
-  font-family: "Cascadia Code";
+  font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/CascadiaCode/CascadiaCode-Italic.woff2') format('woff2');
+  src: url('/fonts/IBMPlexSans/IBMPlexSans-TextItalic.woff2') format('woff2');
 }
 @font-face {
-  font-family: "Cascadia Code";
+  font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/CascadiaCode/CascadiaCode-BoldItalic.woff2') format('woff2');
+  src: url('/fonts/IBMPlexSans/IBMPlexSans-BoldItalic.woff2') format('woff2');
 }
 @font-face {
-  font-family: "Cascadia Code";
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/CascadiaCode/CascadiaCode-Regular.woff2') format('woff2');
+  src: url('/fonts/IBMPlexSans/IBMPlexSans-Text.woff2') format('woff2');
 }
 @font-face {
-  font-family: "Cascadia Code";
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/CascadiaCode/CascadiaCode-Bold.woff2') format('woff2');
+  src: url('/fonts/IBMPlexSans/IBMPlexSans-Bold.woff2') format('woff2');
 }
 
-/* Cabin */
+/* IBM Plex Serif */
 
 @font-face {
-  font-family: "Cabin";
-  font-style: normal;
-  font-display: swap;
-  src: url('/fonts/Cabin/Cabin.ttf') format('truetype');
-}
-@font-face {
-  font-family: "Cabin";
+  font-family: "IBM Plex Serif";
   font-style: italic;
+  font-weight: 400;
   font-display: swap;
-  src: url('/fonts/Cabin/Cabin-Italic.ttf') format('truetype');
+  src: url('/fonts/IBMPlexSerif/IBMPlexSerif-TextItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/IBMPlexSerif/IBMPlexSerif-BoldItalic.woff2') format('woff2');
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/IBMPlexSerif/IBMPlexSerif-Text.woff2') format('woff2');
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/IBMPlexSerif/IBMPlexSerif-Bold.woff2') format('woff2');
 }
 
 /* Roboto Mono */
@@ -73,19 +89,4 @@
   font-weight: 700;
   font-display: swap;
   src: url('/fonts/RobotoMono/RobotoMono-BoldItalic.ttf') format('truetype');
-}
-
-/* Averia Serif */
-
-@font-face {
-  font-family: "Averia Serif";
-  font-style: normal;
-  font-display: swap;
-  src: url('/fonts/AveriaSerif/AveriaSerifGWF-Bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: "Averia Serif";
-  font-style: italic;
-  font-display: swap;
-  src: url('/fonts/AveriaSerif/AveriaSerifGWF-BoldItalic.ttf') format('truetype');
 }

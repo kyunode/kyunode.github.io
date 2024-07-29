@@ -8,7 +8,8 @@
 /* ROOT, HTML, DAN BODY */
 
 :root {
-  font-family : Inter, "Radio Canada", sans-serif;
+  font-family : "IBM Plex Sans", sans-serif;
+  font-feature-settings: "ss02" 1;
   /* font-feature-settings: "cv05" 1; */
   /* font-weight : 350; */
 }
@@ -32,7 +33,7 @@ html {
 
 body {
   /* background-color        : var(--lb); */
-  background-image	  : linear-gradient(135deg, #070707, var(--garis));
+  background-image        : linear-gradient(0deg, var(--lb) 67%, var(--garis));
   background-attachment   : fixed;
   color                   : var(--pr);
   -webkit-text-size-adjust: 100%;
@@ -48,10 +49,11 @@ body {
 /* JUDUL (SITUS, DI BERANDA, DAN POS) */
 
 .masthead {
+  /*background-image        : linear-gradient(0deg, #070707, var(--garis));*/
   padding-top   : 1rem;
   padding-bottom: 1rem;
   margin-bottom : 3rem;
-  border-bottom : 1px solid var(--garis);
+  /*border-bottom : 1px solid var(--garis);*/
 }
 
 .masthead-title {
@@ -91,7 +93,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family   : Inter, "Radio Canada", sans-serif;
+  font-family   : "IBM Plex Serif", sans-serif;
+  font-feature-settings: "ss02" 0;
   /* font-feature-settings: "cv05" 1, "cv06" 1, "cv08" 1, "cv11" 1; */
   /*   color         : var(--pro-isi); */
   margin-bottom : .3rem;
@@ -100,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-weight   : 800;
+  font-weight   : 700;
   /* font-stretch  : 85%; */
   font-size     : 1.75rem;
   /* letter-spacing: -0.02rem; */
@@ -209,7 +212,6 @@ a:focus {
 code,
 pre {
   font-family     : "Roboto Mono", Consolas, monospace;
-  font-feature-settings: "ss01" 0;
 }
 
 code {
