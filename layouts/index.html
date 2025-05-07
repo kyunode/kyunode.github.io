@@ -6,6 +6,9 @@
 <div class="posts">
   {{ range .Paginator.Pages }}
     <div class="post">
+        {{ if .Params.image }}
+          <img id="homeimg" src="{{ .Params.image }}">
+        {{ end }}
         <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
         {{ if .Description }}
             {{ .Description | markdownify }}
@@ -26,7 +29,7 @@
   {{ end }}
 </div>
 
-<hr>
+<!-- <hr> -->
 <div style="text-align:center;margin-top:.5rem;margin-bottom:1.25rem;">
   {{ if $paginator.HasPrev }}
   <a class="pagination-item newer" href="{{ $paginator.Prev.URL }}">&#9664;</a>

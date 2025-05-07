@@ -32,17 +32,17 @@ html {
 }
 
 body {
-  background-color        : var(--lb);
-  background-image        : linear-gradient(0deg, var(--lb) 67%, var(--garis));
-  background-attachment   : fixed;
-  color                   : var(--pr);
+  background-color        : var(--md-sys-color-surface);
+  /* background-image        : linear-gradient(0deg, var(--md-sys-color-surface) 67%, var(--md-sys-color-primary-container)); */
+  /* background-attachment   : fixed; */
+  color                   : var(--md-sys-color-on-surface);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
 ::selection {
-  background              : var(--lbo) !important;
-  color                   : var(--pr) !important;
+  background              : var(--md-sys-color-primary) !important;
+  color                   : var(--md-sys-color-on-primary) !important;
 }
 
 /* ================================== */
@@ -59,17 +59,17 @@ body {
 .masthead-title {
   margin-top    : 0;
   margin-bottom : 0;
-  color         : var(--pr);
+  color         : var(--md-sys-color-primary);
 }
 
 .masthead-title a {
-  color         : var(--pr);
+  color         : var(--md-sys-color-primary);
 }
 
 .masthead-title small {
   font-size     : 75%;
   font-weight   : 400;
-  color         : var(--pr2);
+  color         : var(--md-sys-color-primary);
   letter-spacing: 0;
 }
 
@@ -85,7 +85,7 @@ body {
 #topbar {
   z-index                   : 3;
   position                  : fixed;
-  background                : var(--lb);
+  background                : var(--md-sys-color-surface);
   top                       : -100px;
   width                     : 100%;
   transition                : top 0.3s;
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family   : "IBM Plex Serif", sans-serif;
   font-feature-settings: "ss02" 0;
   /* font-feature-settings: "cv05" 1, "cv06" 1, "cv08" 1, "cv11" 1; */
-  /*   color         : var(--pro-isi); */
+  color         : var(--md-sys-color-on-primary-container);
   margin-bottom : .3rem;
   line-height   : 1.25;
   text-rendering: optimizeLegibility;
@@ -165,10 +165,12 @@ dd {
 /* KUTIPAN (QUOTE) */
 
 blockquote {
+  background-color: var(--md-sys-color-secondary-container);
   padding        : .5rem .1rem;
-  margin         : .8rem 0;
-  color          : var(--sk);
-  border-left    : .2rem solid var(--sk);
+  margin         : .8rem 0 1rem 0;
+  color          : var(--md-sys-color-on-secondary-container);
+  border-left    : .5rem solid var(--md-sys-color-on-secondary-container);
+  border-radius  : 8px;
 }
 
 blockquote p {
@@ -193,8 +195,8 @@ blockquote p:last-child {
 /* PRANALA, TAUTAN */
 
 a {
-  color          : var(--tr);
-  text-decoration: none;
+  color          : var(--md-sys-color-tertiary);
+  /* text-decoration: none; */
 }
 
 a strong {
@@ -204,6 +206,10 @@ a strong {
 a:hover,
 a:focus {
   text-decoration: underline;
+}
+
+a.pagination-item {
+  text-decoration: none;
 }
 
 /* ============================ */
@@ -217,9 +223,9 @@ pre {
 code {
   padding         : .12rem .12rem;
   font-size       : .85rem;
-  color           : #ffd9dc;
+  color           : var(--md-sys-color-secondary);
   border-radius   : 3px;
-  background-color: var(--lb2);
+  background-color: var(--md-sys-color-on-secondary);
 }
 
 pre {
@@ -231,8 +237,8 @@ pre {
   line-height     : 1.4;
   white-space     : pre;
   overflow-x      : auto;
-  border          : 1.5px dashed var(--pr);
-  border-radius   : 3px;
+  border          : 1.5px dashed var(--md-sys-color-primary);
+  border-radius   : 8px;
 }
 
 pre code {
@@ -260,13 +266,14 @@ pre code {
   font-size    : .8rem;
   font-weight  : 400;
   display      : block;
-  margin-top   : .75rem;
-  color        : var(--pr2);
+  /* margin-top   : .75rem; */
+  color        : var(--md-sys-color-secondary);
 }
 
 .post-date.bottom {
   font-feature-settings: "cv08" 1;
-  margin-top : -.35rem;
+  color: var(--md-sys-color-primary);
+  margin-top : -.07rem;
   font-size  : .8rem;
   font-weight: 700;
   line-height: 1.15;
@@ -277,11 +284,10 @@ pre code {
 
 .disclaimer {
   font-size     : .8rem;
-  color         : var(--pr2);
+  color         : var(--md-sys-color-primary);
   margin-bottom : 30px;
 }
 
-/*
 .disclaimer a {
   text-decoration: none;
 }
@@ -289,7 +295,6 @@ pre code {
 .disclaimer a:hover {
   text-decoration: underline;
 }
-*/
 
 .disc-icon {
   filter        : var(--tr-svg);
@@ -298,6 +303,7 @@ pre code {
   width         : .9rem;
   height        : .9rem;
   margin        : 0px 1px 0px 5px;
+  border-radius : 0px;
 }
 
 /* ================ */
@@ -307,8 +313,12 @@ hr {
   position     : relative;
   margin       : 1.5rem 0;
   border       : 0;
-  border-top   : 1px solid var(--garis);
+  border-top   : 1px solid var(--md-sys-color-primary);
   border-bottom: 0;
+}
+
+.post hr {
+  border-top   : 1px solid var(--md-sys-color-surface);
 }
 
 /* ========================= */
@@ -318,7 +328,7 @@ img {
   display         : block;
   max-width       : 100%;
   margin          : 1rem auto 1rem auto;
-  border-radius   : 5px;
+  border-radius   : 8px;
 }
 
 #cover {
@@ -341,11 +351,20 @@ img {
 }
 
 #sitelogo {
-  margin: -5px .35rem -5px 0;
+  margin: 0px .35rem -5px 0;
   height: 1.75rem;
-  filter: var(--logo-f);
+  filter: var(--logo-svg);
 }
 
+#homeimg {
+  display       :block;
+  float         :right;
+  object-fit    :cover;
+  width         :5em;
+  height        :5em;
+  border-radius :100%;
+  margin        :0;
+}
 /* ===== */
 /* TABEL */
 
@@ -353,7 +372,7 @@ table {
   display         : block;
   margin-bottom   : 1rem;
   width           : 100%;
-  border          : 1px solid var(--pr);
+  border          : 1px solid var(--md-sys-color-primary);
   border-collapse : collapse;
   overflow-x      : auto;
 }
@@ -361,7 +380,7 @@ table {
 td,
 th {
   padding         : .25rem .5rem;
-  border          : 1px solid var(--pr);
+  border          : 1px solid var(--md-sys-color-primary);
 }
 
 /* Gaya berbeda untuk judul tabel.
@@ -372,7 +391,7 @@ th {
 
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: var(--lb2);
+  background-color: var(--md-sys-color-inverse-primary);
 }
 
 
@@ -381,13 +400,14 @@ tbody tr:nth-child(odd) th {
 
 .footnotes {
   font-size: .8rem;
-  color: var(--pro-isi);
+  color: var(--md-sys-color-on-primary-container);
 }
 
-/* .footnotes hr::before {
-  content: "Daftar Referensi";
-  color: var(--pr2);
-} */
+.footnotes hr::before {
+  content: "Catatan Kaki";
+  font-style: italic;
+  color: var(--md-sys-color-on-primary-container);
+}
 
 /* ================ */
 /* TATA LETAK SITUS */
@@ -425,21 +445,24 @@ tbody tr:nth-child(odd) th {
 
 .page,
 .post {
-  margin-bottom: 4em;
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-primary-container);
+  padding: 1em;
+  margin-bottom: 1em;
+  border       : 2px solid var(--md-sys-color-primary);
+  border-radius: 10px;
 }
 
 .page-title,
 .post-title,
 .post-title a {
-  color: var(--pro-isi);
-  /* text-decoration: none; */
+  color: var(--md-sys-color-on-primary-container);
+  text-decoration: none;
 }
 
-/*
 .post-title a:hover {
   text-decoration: underline;
 }
-*/
 
 .page-title,
 .post-title {
