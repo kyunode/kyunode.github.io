@@ -7,7 +7,7 @@ title = "Qauland's Sandbox"
   title = "Qauland's Sandbox"
   dateForm = '02 Jan 2006'
 [permalinks]
-  posts = '/:slugorfilename/'
+  posts = '/:slugorcontentbasename/'
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
