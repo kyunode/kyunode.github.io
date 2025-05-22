@@ -11,29 +11,40 @@ Durasi memasak ikan bervariasi tergantung pada beberapa faktor, seperti:
  * Jenis ikan: Ikan dengan tekstur dan ketebalan yang berbeda akan memerlukan waktu masak yang berbeda pula.
  * Ukuran dan ketebalan ikan: Ikan fillet tipis, ikan utuh kecil, dan ikan utuh besar memiliki waktu masak yang berbeda.
  * Metode memasak: Menggoreng, mengukus, memanggang/mengoven, atau menumis/memasak kuah akan memengaruhi durasi.
+
 Berikut adalah perkiraan durasi memasak ikan berdasarkan jenis dan metode:
-Durasi Memasak Berdasarkan Jenis dan Ukuran Ikan
+
+### Durasi Memasak Berdasarkan Jenis dan Ukuran Ikan
+
  * Ikan fillet tipis (misalnya dori, kakap, tuna): Cukup 3–5 menit per sisi.
  * Ikan utuh kecil (misalnya kembung, mujair): Sekitar 10–12 menit.
  * Ikan utuh besar (misalnya bandeng, gurame): Bisa 15–25 menit, tergantung ukuran dan metode masaknya.
-Durasi Memasak Berdasarkan Metode
+
+### Durasi Memasak Berdasarkan Metode
+
  * Menggoreng:
    * Fillet: 3–4 menit per sisi.
    * Ikan utuh kecil: 7–10 menit per sisi.
    * Pastikan minyak sudah panas (sekitar 180 derajat Celcius) dan jangan terlalu sering membalik ikan agar tidak hancur.
+
  * Mengukus:
    * Ikan kecil: 10–15 menit.
    * Ikan besar: 20–25 menit (misalnya ikan kakap bisa 30 menit, ikan tongkol 20-30 menit).
    * Jangan mengukus terlalu lama karena daging ikan bisa menjadi keras. Alasi dengan daun pisang atau baking paper agar tidak menempel.
+
  * Memanggang/Oven:
    * Fillet: 10–15 menit.
    * Ikan utuh: 25–30 menit (dengan arang, sekitar 10-15 menit per sisi).
    * Balik ikan cukup sekali saat memanggang atau mengoven.
+
  * Tumis atau Masak Kuah: 8–15 menit, tergantung ketebalan potongan ikan.
-Tips Tambahan
+
+### Tips Tambahan
+
  * Jangan terlalu lama memasak: Ikan termasuk bahan yang cepat matang dan mudah hancur jika terlalu matang (overcooked).
  * Gunakan api sedang: Api terlalu besar bisa membuat bagian luar gosong sementara bagian dalam belum matang.
  * Cek kematangan: Anda bisa mengecek kematangan ikan dengan menusuk bagian paling tebal ikan menggunakan garpu. Jika tidak ada cairan bening yang keluar, berarti ikan sudah matang. Dagingnya juga akan mudah mengelupas dari tulang.
+
 Selamat memasak ikan!
 
 ## Meta AI (Llama 4)
@@ -57,7 +68,7 @@ Pastikan untuk memeriksa suhu internal ikan untuk memastikan keamanan pangan. Su
 
 ## Microsoft Copilot (Quick Response)
 
-Durasi memasak ikan tergantung pada jenis ikan dan metode memasaknya. Berikut perkiraan waktu memasak berdasarkan teknik yang digunakan[(1)](https://www.idntimes.com/food/diet/fina-wahibatun-nisa-1/berapa-lama-waktu-ideal-untuk-memasak-ikan-agar-tidak-hancur?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054):
+Durasi memasak ikan tergantung pada jenis ikan dan metode memasaknya. Berikut perkiraan waktu memasak berdasarkan teknik yang digunakan[(1)](https://www.idntimes.com/food/diet/fina-wahibatun-nisa-1/berapa-lama-waktu-ideal-untuk-memasak-ikan-agar-tidak-hancur):
 
 - **Goreng**: 3–4 menit per sisi untuk fillet, 7–10 menit untuk ikan utuh kecil.
 - **Kukus**: 10–15 menit untuk ikan kecil, 20–25 menit untuk ikan besar.
