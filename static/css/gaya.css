@@ -8,8 +8,8 @@
 /* ROOT, HTML, DAN BODY */
 
 :root {
-  font-family : "IBM Plex Sans", sans-serif;
-  font-feature-settings: "ss02" 1;
+  font-family : "Iosevka Etoile", serif;
+  /* font-feature-settings: "ss02" 1; */
   /* font-feature-settings: "cv05" 1; */
   /* font-weight : 350; */
 }
@@ -27,7 +27,7 @@ html {
 
 @media screen and (max-width: 480px) {
   html {
-    font-size    : 11pt;
+    font-size    : 13pt;
   }
 }
 
@@ -93,8 +93,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family   : "IBM Plex Serif", sans-serif;
-  font-feature-settings: "ss02" 0;
+  font-family   : "Iosevka Etoile", serif;
+  /* font-feature-settings: "ss02" 0; */
   /* font-feature-settings: "cv05" 1, "cv06" 1, "cv08" 1, "cv11" 1; */
   color         : var(--md-sys-color-on-primary-container);
   margin-bottom : .3rem;
@@ -217,7 +217,7 @@ a.pagination-item {
 
 code,
 pre {
-  font-family     : "Roboto Mono", Consolas, monospace;
+  font-family     : "Iosevka Extended", "Roboto Mono", Consolas, monospace;
 }
 
 code {

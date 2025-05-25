@@ -1,92 +1,61 @@
-/* IBM Plex Sans */
+/* Iosevka Extended */
 
 @font-face {
-  font-family: "IBM Plex Sans";
+  font-family: "Iosevka Extended";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/IBMPlexSans/IBMPlexSans-TextItalic.woff2') format('woff2');
+  src: url('/fonts/Iosevka/Iosevka-ExtendedItalic.woff2') format('woff2');
 }
 @font-face {
-  font-family: "IBM Plex Sans";
+  font-family: "Iosevka Extended";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/IBMPlexSans/IBMPlexSans-BoldItalic.woff2') format('woff2');
+  src: url('/fonts/Iosevka/Iosevka-ExtendedBoldItalic.woff2') format('woff2');
 }
 @font-face {
-  font-family: "IBM Plex Sans";
+  font-family: "Iosevka Extended";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/IBMPlexSans/IBMPlexSans-Text.woff2') format('woff2');
+  src: url('/fonts/Iosevka/Iosevka-Extended.woff2') format('woff2');
 }
 @font-face {
-  font-family: "IBM Plex Sans";
+  font-family: "Iosevka Extended";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/IBMPlexSans/IBMPlexSans-Bold.woff2') format('woff2');
+  src: url('/fonts/Iosevka/Iosevka-ExtendedBold.woff2') format('woff2');
 }
 
-/* IBM Plex Serif */
+/* Iosevka Etoile */
 
 @font-face {
-  font-family: "IBM Plex Serif";
+  font-family: "Iosevka Etoile";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/IBMPlexSerif/IBMPlexSerif-TextItalic.woff2') format('woff2');
+  src: url('/fonts/Iosevka/IosevkaEtoile-Italic.woff2') format('woff2');
 }
 @font-face {
-  font-family: "IBM Plex Serif";
+  font-family: "Iosevka Etoile";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/IBMPlexSerif/IBMPlexSerif-BoldItalic.woff2') format('woff2');
+  src: url('/fonts/Iosevka/IosevkaEtoile-BoldItalic.woff2') format('woff2');
 }
 @font-face {
-  font-family: "IBM Plex Serif";
+  font-family: "Iosevka Etoile";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/IBMPlexSerif/IBMPlexSerif-Text.woff2') format('woff2');
+  src: url('/fonts/Iosevka/IosevkaEtoile-Regular.woff2') format('woff2');
 }
 @font-face {
-  font-family: "IBM Plex Serif";
+  font-family: "Iosevka Etoile";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/IBMPlexSerif/IBMPlexSerif-Bold.woff2') format('woff2');
-}
-
-/* Roboto Mono */
-
-@font-face {
-  font-family: "Roboto Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/RobotoMono/RobotoMono-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: "Roboto Mono";
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/RobotoMono/RobotoMono-Italic.ttf') format('truetype');
-}
-@font-face {
-  font-family: "Roboto Mono";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/fonts/RobotoMono/RobotoMono-Bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: "Roboto Mono";
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/fonts/RobotoMono/RobotoMono-BoldItalic.ttf') format('truetype');
+  src: url('/fonts/Iosevka/IosevkaEtoile-Bold.woff2') format('woff2');
 }
