@@ -17,7 +17,7 @@ Penting: **Selalu gunakan `-S` atau `-Syu` saat memasang aplikasi menggunakan `p
 
 Cek mode *boot*:
 
-```
+```bash
 cat /sys/firmware/efi/fw_platform_size
 ```
 
@@ -29,7 +29,7 @@ Alur pemasangan di bawah mengasumsikan mode BIOS/CSM. Akan ada ❗catatan jika p
 
 Hubungkan komputer ke internet via Wi-Fi (diasumsikan nama perangkat Wi-Fi adalah `wlan0` dan nama jaringan Wi-Fi adalah `Qauland`):
 
-```
+```bash
 ip link
 iwctl
 device list
@@ -42,7 +42,7 @@ Keluar pakai Ctrl+D.
 
 Tes konektivitas internet (opsional):
 
-```
+```bash
 ping google.com
 ```
 
@@ -50,7 +50,7 @@ Selesaikan pakai Ctrl+C.
 
 Gunakan peladen paket aplikasi dengan jaringan tercepat:
 
-```
+```bash
 reflector --country 'Australia,Singapore,' --sort rate --save /etc/pacman.d/mirrorlist
 ```
 
@@ -60,13 +60,13 @@ Tambahkan `--download-timeout 60` kalau sering *time out*.
 
 Cek tanggal:
 
-```
+```bash
 timedatectl status
 ```
 
 Cek partisi diska sekaligus membuat partisi sistem dan *swap* (diasumsikan partisi sistem dan *swap* adalah `/dev/sda3` dan `/dev/sda1`):
 
-```
+```bash
 fdisk -l
 mkfs.ext4 /dev/sda3 # sistem
 mkfs.ext4 /dev/sda4 # partisi /home, opsional
@@ -75,7 +75,7 @@ mkswap /dev/sda1    # swap
 
 Muat partisi yang sudah dibuat:
 
-```
+```bash
 mount /dev/sda3 /mnt
 mount --mkdir /dev/sda4 /mnt/home # kalau buat partisi /home
 swapon /dev/sda6
@@ -83,39 +83,39 @@ swapon /dev/sda6
 
 **❗UEFI:** Muat partisi EFI (diasumsikan `/dev/sda2`) ke `/boot/efi`:
 
-```
+```bash
 mount --mkdir /mnt/boot/efi
 ```
 
 Pasang Arch Linux dan `nano`:
 
-```
+```bash
 pacstrap -K /mnt base linux linux-firmware nano
 ```
 
 Buat berkas `fstab`:
 
-```
+```bash
 genfstab -U /mnt >> /mnt/etc/fstab
 nano /mnt/etc/fstab # sunting jika ada galat
 ```
 
 Masuk ke instalasi Arch Linux:
 
-```
+```bash
 arch-chroot /mnt
 ```
 
 Buat berkas terkait zona waktu (diasumsikan [Asia/Makassar](https://timezonedb.com/time-zones/Asia/Makassar)):
 
-```
+```bash
 ln -sf /usr/share/zoneinfo/Asia/Makassar /etc/localtime
 hwclock --systohc
 ```
 
 Buat dan ganti berkas terkait *locale*. Saya pakai *locale* `en_GB`:
 
-```
+```bash
 nano /etc/locale.gen # uncomment en_GB.UTF-8 UTF-8 dan/atau locale lain yang dibutuhkan
 locale-gen
 echo LANG=en_GB.UTF-8 > /etc/locale.conf
@@ -124,7 +124,7 @@ export LANG=en_GB.UTF-8
 
 Buat *hostname* (diasumsikan `qd-arch`):
 
-```
+```bash
 echo qd-arch > /etc/hostname
 touch /etc/hosts
 nano /etc/hosts
@@ -132,7 +132,7 @@ nano /etc/hosts
 
 Tambah kode berikut ke `/etc/hosts`:
 
-```
+```bash
 127.0.0.1  localhost
 ::1        localhost
 127.0.1.1  qd-arch
@@ -140,13 +140,13 @@ Tambah kode berikut ke `/etc/hosts`:
 
 Buat kata sandi untuk *root*:
 
-```
+```bash
 passwd
 ```
 
 Pasang `grub` (diasumsikan dipasang di `/dev/sda`):
 
-```
+```bash
 pacman -Syu grub # ❗UEFI: tambahkan efibootmgr
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
@@ -154,7 +154,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 Pasang `sudo` dan buat akun pengguna (diasumsikan `qauland` dengan nama pengguna `Qauland`):
 
-```
+```bash
 pacman -Syu sudo
 useradd -c "Qauland" -m qauland
 passwd qauland # ketik kata sandi untuk pengguna qauland
@@ -166,7 +166,7 @@ EDITOR=nano visudo
 
 Pasang berbagai paket aplikasi:
 
-```
+```bash
 pacman -Syu ...
 ```
 
@@ -229,13 +229,13 @@ Ganti elipsis dengan kumpulan paket di bawah sesuka Anda:
 
 Setelah memasang LightDM, buka `lightdm.conf`:
 
-```
+```bash
 nano /etc/lightdm/lightdm.conf
 ```
 
 Cari `greeter-session` di bagian `[Seat:*]`, lalu *uncomment* dan sunting menjadi seperti ini:
 
-```
+```bash
 [Seat:*]
 ...
 greeter-session=lightdm-gtk-greeter
@@ -243,14 +243,14 @@ greeter-session=lightdm-gtk-greeter
 
 Aktifkan layanan LightDM dan NetworkManager:
 
-```
+```bash
 systemctl enable lightdm.service
 systemctl enable NetworkManager.service
 ```
 
 Akhirnya:
 
-```
+```bash
 exit
 umount -R /mnt
 reboot
@@ -264,7 +264,7 @@ reboot
 
 - Kalau sebelumnya tidak pasang `network-manager-applet`, ketik di terminal:
 
-  ```
+  ```bash
   nmcli dev wifi rescan
   nmtui -> Activate a connection -> Qauland -> Back -> Quit
   ```
@@ -273,11 +273,11 @@ reboot
 
 - Konfigurasi `fstab` kalau misalnya ada partisi Windows yang tidak terbaca:
 
-  ```
+  ```bash
   sudo nano /etc/fstab
   ```
 
-  ```
+  ```bash
   # /dev/sda1
   UUID=<uuid>   /media/win1   ntfs-3g   defaults,noauto,ro   0 0
 
@@ -291,11 +291,11 @@ reboot
 
 - Kalau Windows tidak muncul setelah `grub-mkconfig`:
 
-  ```
+  ```bash
   sudo nano /etc/grub.d/40_custom
   ```
 
-  ```
+  ```bash
   menuentry 'Windows' {
      insmod ntfs
      insmod ntldr
@@ -308,7 +308,7 @@ reboot
 
   **❗UEFI:**
 
-  ```
+  ```bash
   menuentry 'Windows 10' {
      search --fs-uuid --no-floppy --set=root <uuid-partisi-efi>
      chainloader (${root})/EFI/Microsoft/Boot/bootmgfw.efi
@@ -317,7 +317,7 @@ reboot
   
   Kemudian
 
-  ```
+  ```bash
   sudo grub-mkconfig -o /boot/grub/grub.cfg
   ```
 
@@ -343,7 +343,7 @@ Tidak wajib, cuma siapa tau butuh.
 
 - `yay`<sup>AUR</sup> (membantu dalam penggunaan [Arch User Repository (AUR)](https://wiki.archlinux.org/title/Arch_User_Repository)). Untuk memasang `yay`:
 
-  ```
+  ```bash
   pacman -S --needed git base-devel
   git clone https://aur.archlinux.org/yay-bin.git
   cd yay-bin
@@ -354,7 +354,7 @@ Tidak wajib, cuma siapa tau butuh.
 
 - Wine (untuk menjalankan aplikasi Windows) dan Steam (iya, Steam yang itu) dapat dipasang setelah mengaktifkan repositori `multilib`. *Uncomment* baris berikut di `/etc/pacman.conf`:
 
-  ```
+  ```bash
   [multilib]
   Include = /etc/pacman.d/mirrorlist
   ```
@@ -375,7 +375,7 @@ Tidak wajib, cuma siapa tau butuh.
 
 - Berbagai alias untuk `pacman`. Alias ini ditambahkan ke `~/.bashrc`.
 
-  ```
+  ```bash
   # Pasang, abaikan jika sudah terpasang
   alias pcpsg="pacman -S --needed"
 
@@ -442,7 +442,7 @@ Skema warna yang digunakan adalah **Gruvbox**, tersedia untuk beberapa piranti l
 
   3. Buka/buat `~/.profile`, lalu ketik:
 
-     ```
+     ```bash
      export QT_QPA_PLATFORMTHEME=qt5ct
      # export QT_STYLE_OVERRRIDE=kvantum (Ketik baris atas saja. Baris ini adalah metode lainnya yang saya sudah coba tapi tidak berhasil. Tetap disimpan di sini untuk tujuan dokumentasi.)
      ```
